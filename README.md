@@ -2,7 +2,7 @@
 
 <img width="220" src="https://cdn-icons-png.flaticon.com/512/3135/3135692.png" />
 
-# 🇲🇽 InSiDE MX
+# 🇲🇽 InfrestructuraDocumentacionElectronica
 
 ### Infraestructura y Sistema de Documentación Electrónica 🚀
 
@@ -141,7 +141,7 @@ El proyecto fue desarrollado para practicar:
 # 📂 Estructura del proyecto
 
 ```bash
-inside-mx/
+InfrestructuraDocumentacionElectronica/
 │
 ├── fuentes/
 │   ├── inside-web/
@@ -177,7 +177,7 @@ inside-mx/
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/carm-es/inside.git
+git clone https://github.com/isairey/InfrestructuraDocumentacionElectronica.git
 ```
 
 ---
@@ -185,7 +185,7 @@ git clone https://github.com/carm-es/inside.git
 ## 2️⃣ Entrar al proyecto
 
 ```bash
-cd inside
+cd InfrestructuraDocumentacionElectronica
 ```
 
 ---
@@ -376,7 +376,7 @@ git push origin feature/nueva-funcionalidad
 
 <div align="center">
 
-## InSiDE MX — Infraestructura documental empresarial
+## Isai Reyes — Infraestructura documental empresarial
 
 Sistema orientado a documentación electrónica, expedientes digitales y automatización empresarial moderna 🇲🇽
 
@@ -400,6 +400,6 @@ Proyecto desarrollado para prácticas de documentación electrónica, integraci�
 
 <div align="center">
 
-### 🇲🇽 InSiDE MX — infraestructura moderna para documentación electrónica 🚀
+### 🇲🇽InfrestructuraDocumentacionElectronica — infraestructura moderna para documentación electrónica 🚀
 
 </div>

@@ -9,11 +9,9 @@ import es.mpt.dsic.inside.xml.inside.TipoMetadatosAdicionales;
 
 
 /**
- * <p>
- * Java class for TipoDocumentoVisualizacionInsideMtom complex type.
+ * <p>Java class for TipoDocumentoVisualizacionInsideMtom complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoDocumentoVisualizacionInsideMtom">
@@ -32,74 +30,89 @@ import es.mpt.dsic.inside.xml.inside.TipoMetadatosAdicionales;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoDocumentoVisualizacionInsideMtom",
-    propOrder = {"documentoEni", "metadatosAdicionales", "opcionesVisualizacionDocumento"})
+@XmlType(name = "TipoDocumentoVisualizacionInsideMtom", propOrder = {
+    "documentoEni",
+    "metadatosAdicionales",
+    "opcionesVisualizacionDocumento"
+})
 public class TipoDocumentoVisualizacionInsideMtom {
 
-  @XmlElement(required = true)
-  protected TipoDocumentoEniBinarioOTipoMtom documentoEni;
-  protected TipoMetadatosAdicionales metadatosAdicionales;
-  @XmlElement(required = true)
-  protected TipoOpcionesVisualizacionDocumentoMtom opcionesVisualizacionDocumento;
+    @XmlElement(required = true)
+    protected TipoDocumentoEniBinarioOTipoMtom documentoEni;
+    protected TipoMetadatosAdicionales metadatosAdicionales;
+    @XmlElement(required = true)
+    protected TipoOpcionesVisualizacionDocumentoMtom opcionesVisualizacionDocumento;
 
-  /**
-   * Gets the value of the documentoEni property.
-   * 
-   * @return possible object is {@link TipoDocumentoEniBinarioOTipoMtom }
-   * 
-   */
-  public TipoDocumentoEniBinarioOTipoMtom getDocumentoEni() {
-    return documentoEni;
-  }
+    /**
+     * Gets the value of the documentoEni property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoDocumentoEniBinarioOTipoMtom }
+     *     
+     */
+    public TipoDocumentoEniBinarioOTipoMtom getDocumentoEni() {
+        return documentoEni;
+    }
 
-  /**
-   * Sets the value of the documentoEni property.
-   * 
-   * @param value allowed object is {@link TipoDocumentoEniBinarioOTipoMtom }
-   * 
-   */
-  public void setDocumentoEni(TipoDocumentoEniBinarioOTipoMtom value) {
-    this.documentoEni = value;
-  }
+    /**
+     * Sets the value of the documentoEni property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoDocumentoEniBinarioOTipoMtom }
+     *     
+     */
+    public void setDocumentoEni(TipoDocumentoEniBinarioOTipoMtom value) {
+        this.documentoEni = value;
+    }
 
-  /**
-   * Gets the value of the metadatosAdicionales property.
-   * 
-   * @return possible object is {@link TipoMetadatosAdicionales }
-   * 
-   */
-  public TipoMetadatosAdicionales getMetadatosAdicionales() {
-    return metadatosAdicionales;
-  }
+    /**
+     * Gets the value of the metadatosAdicionales property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoMetadatosAdicionales }
+     *     
+     */
+    public TipoMetadatosAdicionales getMetadatosAdicionales() {
+        return metadatosAdicionales;
+    }
 
-  /**
-   * Sets the value of the metadatosAdicionales property.
-   * 
-   * @param value allowed object is {@link TipoMetadatosAdicionales }
-   * 
-   */
-  public void setMetadatosAdicionales(TipoMetadatosAdicionales value) {
-    this.metadatosAdicionales = value;
-  }
+    /**
+     * Sets the value of the metadatosAdicionales property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoMetadatosAdicionales }
+     *     
+     */
+    public void setMetadatosAdicionales(TipoMetadatosAdicionales value) {
+        this.metadatosAdicionales = value;
+    }
 
-  /**
-   * Gets the value of the opcionesVisualizacionDocumento property.
-   * 
-   * @return possible object is {@link TipoOpcionesVisualizacionDocumentoMtom }
-   * 
-   */
-  public TipoOpcionesVisualizacionDocumentoMtom getOpcionesVisualizacionDocumento() {
-    return opcionesVisualizacionDocumento;
-  }
+    /**
+     * Gets the value of the opcionesVisualizacionDocumento property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoOpcionesVisualizacionDocumentoMtom }
+     *     
+     */
+    public TipoOpcionesVisualizacionDocumentoMtom getOpcionesVisualizacionDocumento() {
+        return opcionesVisualizacionDocumento;
+    }
 
-  /**
-   * Sets the value of the opcionesVisualizacionDocumento property.
-   * 
-   * @param value allowed object is {@link TipoOpcionesVisualizacionDocumentoMtom }
-   * 
-   */
-  public void setOpcionesVisualizacionDocumento(TipoOpcionesVisualizacionDocumentoMtom value) {
-    this.opcionesVisualizacionDocumento = value;
-  }
+    /**
+     * Sets the value of the opcionesVisualizacionDocumento property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoOpcionesVisualizacionDocumentoMtom }
+     *     
+     */
+    public void setOpcionesVisualizacionDocumento(TipoOpcionesVisualizacionDocumentoMtom value) {
+        this.opcionesVisualizacionDocumento = value;
+    }
 
 }

@@ -10,11 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoResultadoVisualizacionDocumentoInsideMtom complex type.
+ * <p>Java class for TipoResultadoVisualizacionDocumentoInsideMtom complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoResultadoVisualizacionDocumentoInsideMtom">
@@ -32,53 +30,64 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoResultadoVisualizacionDocumentoInsideMtom", propOrder = {"contenido", "mime"})
+@XmlType(name = "TipoResultadoVisualizacionDocumentoInsideMtom", propOrder = {
+    "contenido",
+    "mime"
+})
 public class TipoResultadoVisualizacionDocumentoInsideMtom {
 
-  @XmlElement(required = true)
-  @XmlMimeType("application/octet-stream")
-  protected DataHandler contenido;
-  @XmlElement(required = true)
-  protected String mime;
+    @XmlElement(required = true)
+    @XmlMimeType("application/octet-stream")
+    protected DataHandler contenido;
+    @XmlElement(required = true)
+    protected String mime;
 
-  /**
-   * Gets the value of the contenido property.
-   * 
-   * @return possible object is {@link DataHandler }
-   * 
-   */
-  public DataHandler getContenido() {
-    return contenido;
-  }
+    /**
+     * Gets the value of the contenido property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DataHandler }
+     *     
+     */
+    public DataHandler getContenido() {
+        return contenido;
+    }
 
-  /**
-   * Sets the value of the contenido property.
-   * 
-   * @param value allowed object is {@link DataHandler }
-   * 
-   */
-  public void setContenido(DataHandler value) {
-    this.contenido = value;
-  }
+    /**
+     * Sets the value of the contenido property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DataHandler }
+     *     
+     */
+    public void setContenido(DataHandler value) {
+        this.contenido = value;
+    }
 
-  /**
-   * Gets the value of the mime property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getMime() {
-    return mime;
-  }
+    /**
+     * Gets the value of the mime property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMime() {
+        return mime;
+    }
 
-  /**
-   * Sets the value of the mime property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setMime(String value) {
-    this.mime = value;
-  }
+    /**
+     * Sets the value of the mime property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMime(String value) {
+        this.mime = value;
+    }
 
 }

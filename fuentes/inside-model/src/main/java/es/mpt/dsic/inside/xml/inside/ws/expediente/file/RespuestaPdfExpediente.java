@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for RespuestaPdfExpediente complex type.
+ * <p>Java class for RespuestaPdfExpediente complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="RespuestaPdfExpediente">
@@ -29,30 +27,34 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RespuestaPdfExpediente",
-    namespace = "https://ssweb.seap.minhap.es/Inside/XSD/v1.0/respuestaPdfExpediente",
-    propOrder = {"pdfExpediente"})
+@XmlType(name = "RespuestaPdfExpediente", namespace = "https://ssweb.seap.minhap.es/Inside/XSD/v1.0/respuestaPdfExpediente", propOrder = {
+    "pdfExpediente"
+})
 public class RespuestaPdfExpediente {
 
-  @XmlElement(required = true)
-  protected byte[] pdfExpediente;
+    @XmlElement(required = true)
+    protected byte[] pdfExpediente;
 
-  /**
-   * Gets the value of the pdfExpediente property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getPdfExpediente() {
-    return pdfExpediente;
-  }
+    /**
+     * Gets the value of the pdfExpediente property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getPdfExpediente() {
+        return pdfExpediente;
+    }
 
-  /**
-   * Sets the value of the pdfExpediente property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setPdfExpediente(byte[] value) {
-    this.pdfExpediente = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the pdfExpediente property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setPdfExpediente(byte[] value) {
+        this.pdfExpediente = ((byte[]) value);
+    }
 
 }

@@ -10,11 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoDocumentoEniFileInsideMtom complex type.
+ * <p>Java class for TipoDocumentoEniFileInsideMtom complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoDocumentoEniFileInsideMtom">
@@ -31,31 +29,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoDocumentoEniFileInsideMtom", propOrder = {"documentoEniBytes"})
+@XmlType(name = "TipoDocumentoEniFileInsideMtom", propOrder = {
+    "documentoEniBytes"
+})
 public class TipoDocumentoEniFileInsideMtom {
 
-  @XmlElement(required = true)
-  @XmlMimeType("application/octet-stream")
-  protected DataHandler documentoEniBytes;
+    @XmlElement(required = true)
+    @XmlMimeType("application/octet-stream")
+    protected DataHandler documentoEniBytes;
 
-  /**
-   * Gets the value of the documentoEniBytes property.
-   * 
-   * @return possible object is {@link DataHandler }
-   * 
-   */
-  public DataHandler getDocumentoEniBytes() {
-    return documentoEniBytes;
-  }
+    /**
+     * Gets the value of the documentoEniBytes property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DataHandler }
+     *     
+     */
+    public DataHandler getDocumentoEniBytes() {
+        return documentoEniBytes;
+    }
 
-  /**
-   * Sets the value of the documentoEniBytes property.
-   * 
-   * @param value allowed object is {@link DataHandler }
-   * 
-   */
-  public void setDocumentoEniBytes(DataHandler value) {
-    this.documentoEniBytes = value;
-  }
+    /**
+     * Sets the value of the documentoEniBytes property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DataHandler }
+     *     
+     */
+    public void setDocumentoEniBytes(DataHandler value) {
+        this.documentoEniBytes = value;
+    }
 
 }

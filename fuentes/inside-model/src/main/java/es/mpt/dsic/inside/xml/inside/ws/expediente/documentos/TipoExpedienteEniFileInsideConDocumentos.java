@@ -11,11 +11,9 @@ import es.mpt.dsic.inside.xml.inside.ws.documento.TipoDocumentoEniFileInside;
 
 
 /**
- * <p>
- * Java class for TipoExpedienteEniFileInsideConDocumentos complex type.
+ * <p>Java class for TipoExpedienteEniFileInsideConDocumentos complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoExpedienteEniFileInsideConDocumentos">
@@ -33,59 +31,66 @@ import es.mpt.dsic.inside.xml.inside.ws.documento.TipoDocumentoEniFileInside;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoExpedienteEniFileInsideConDocumentos",
-    propOrder = {"expedienteEniBytes", "documentosEniFile"})
+@XmlType(name = "TipoExpedienteEniFileInsideConDocumentos", propOrder = {
+    "expedienteEniBytes",
+    "documentosEniFile"
+})
 public class TipoExpedienteEniFileInsideConDocumentos {
 
-  @XmlElement(required = true)
-  protected byte[] expedienteEniBytes;
-  @XmlElement(required = true)
-  protected List<TipoDocumentoEniFileInside> documentosEniFile;
+    @XmlElement(required = true)
+    protected byte[] expedienteEniBytes;
+    @XmlElement(required = true)
+    protected List<TipoDocumentoEniFileInside> documentosEniFile;
 
-  /**
-   * Gets the value of the expedienteEniBytes property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getExpedienteEniBytes() {
-    return expedienteEniBytes;
-  }
-
-  /**
-   * Sets the value of the expedienteEniBytes property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setExpedienteEniBytes(byte[] value) {
-    this.expedienteEniBytes = ((byte[]) value);
-  }
-
-  /**
-   * Gets the value of the documentosEniFile property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the documentosEniFile property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getDocumentosEniFile().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list {@link TipoDocumentoEniFileInside }
-   * 
-   * 
-   */
-  public List<TipoDocumentoEniFileInside> getDocumentosEniFile() {
-    if (documentosEniFile == null) {
-      documentosEniFile = new ArrayList<TipoDocumentoEniFileInside>();
+    /**
+     * Gets the value of the expedienteEniBytes property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getExpedienteEniBytes() {
+        return expedienteEniBytes;
     }
-    return this.documentosEniFile;
-  }
+
+    /**
+     * Sets the value of the expedienteEniBytes property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setExpedienteEniBytes(byte[] value) {
+        this.expedienteEniBytes = ((byte[]) value);
+    }
+
+    /**
+     * Gets the value of the documentosEniFile property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the documentosEniFile property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getDocumentosEniFile().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link TipoDocumentoEniFileInside }
+     * 
+     * 
+     */
+    public List<TipoDocumentoEniFileInside> getDocumentosEniFile() {
+        if (documentosEniFile == null) {
+            documentosEniFile = new ArrayList<TipoDocumentoEniFileInside>();
+        }
+        return this.documentosEniFile;
+    }
 
 }

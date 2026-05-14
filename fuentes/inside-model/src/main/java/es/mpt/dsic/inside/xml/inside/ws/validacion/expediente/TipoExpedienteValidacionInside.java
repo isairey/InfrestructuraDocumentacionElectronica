@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoExpedienteValidacionInside complex type.
+ * <p>Java class for TipoExpedienteValidacionInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoExpedienteValidacionInside">
@@ -30,51 +28,61 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoExpedienteValidacionInside",
-    propOrder = {"contenido", "opcionesValidacionExpediente"})
+@XmlType(name = "TipoExpedienteValidacionInside", propOrder = {
+    "contenido",
+    "opcionesValidacionExpediente"
+})
 public class TipoExpedienteValidacionInside {
 
-  @XmlElement(required = true)
-  protected byte[] contenido;
-  @XmlElement(required = true)
-  protected TipoOpcionesValidacionExpedienteInside opcionesValidacionExpediente;
+    @XmlElement(required = true)
+    protected byte[] contenido;
+    @XmlElement(required = true)
+    protected TipoOpcionesValidacionExpedienteInside opcionesValidacionExpediente;
 
-  /**
-   * Gets the value of the contenido property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getContenido() {
-    return contenido;
-  }
+    /**
+     * Gets the value of the contenido property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getContenido() {
+        return contenido;
+    }
 
-  /**
-   * Sets the value of the contenido property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setContenido(byte[] value) {
-    this.contenido = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the contenido property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setContenido(byte[] value) {
+        this.contenido = ((byte[]) value);
+    }
 
-  /**
-   * Gets the value of the opcionesValidacionExpediente property.
-   * 
-   * @return possible object is {@link TipoOpcionesValidacionExpedienteInside }
-   * 
-   */
-  public TipoOpcionesValidacionExpedienteInside getOpcionesValidacionExpediente() {
-    return opcionesValidacionExpediente;
-  }
+    /**
+     * Gets the value of the opcionesValidacionExpediente property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoOpcionesValidacionExpedienteInside }
+     *     
+     */
+    public TipoOpcionesValidacionExpedienteInside getOpcionesValidacionExpediente() {
+        return opcionesValidacionExpediente;
+    }
 
-  /**
-   * Sets the value of the opcionesValidacionExpediente property.
-   * 
-   * @param value allowed object is {@link TipoOpcionesValidacionExpedienteInside }
-   * 
-   */
-  public void setOpcionesValidacionExpediente(TipoOpcionesValidacionExpedienteInside value) {
-    this.opcionesValidacionExpediente = value;
-  }
+    /**
+     * Sets the value of the opcionesValidacionExpediente property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoOpcionesValidacionExpedienteInside }
+     *     
+     */
+    public void setOpcionesValidacionExpediente(TipoOpcionesValidacionExpedienteInside value) {
+        this.opcionesValidacionExpediente = value;
+    }
 
 }

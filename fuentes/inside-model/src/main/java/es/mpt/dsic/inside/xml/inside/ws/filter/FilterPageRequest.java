@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for FilterPageRequest complex type.
+ * <p>Java class for FilterPageRequest complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="FilterPageRequest">
@@ -31,64 +29,72 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "FilterPageRequest", propOrder = {"filtro", "pagina", "limite"})
+@XmlType(name = "FilterPageRequest", propOrder = {
+    "filtro",
+    "pagina",
+    "limite"
+})
 public class FilterPageRequest {
 
-  @XmlElement(required = true)
-  protected String filtro;
-  protected int pagina;
-  protected int limite;
+    @XmlElement(required = true)
+    protected String filtro;
+    protected int pagina;
+    protected int limite;
 
-  /**
-   * Gets the value of the filtro property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getFiltro() {
-    return filtro;
-  }
+    /**
+     * Gets the value of the filtro property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getFiltro() {
+        return filtro;
+    }
 
-  /**
-   * Sets the value of the filtro property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setFiltro(String value) {
-    this.filtro = value;
-  }
+    /**
+     * Sets the value of the filtro property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setFiltro(String value) {
+        this.filtro = value;
+    }
 
-  /**
-   * Gets the value of the pagina property.
-   * 
-   */
-  public int getPagina() {
-    return pagina;
-  }
+    /**
+     * Gets the value of the pagina property.
+     * 
+     */
+    public int getPagina() {
+        return pagina;
+    }
 
-  /**
-   * Sets the value of the pagina property.
-   * 
-   */
-  public void setPagina(int value) {
-    this.pagina = value;
-  }
+    /**
+     * Sets the value of the pagina property.
+     * 
+     */
+    public void setPagina(int value) {
+        this.pagina = value;
+    }
 
-  /**
-   * Gets the value of the limite property.
-   * 
-   */
-  public int getLimite() {
-    return limite;
-  }
+    /**
+     * Gets the value of the limite property.
+     * 
+     */
+    public int getLimite() {
+        return limite;
+    }
 
-  /**
-   * Sets the value of the limite property.
-   * 
-   */
-  public void setLimite(int value) {
-    this.limite = value;
-  }
+    /**
+     * Sets the value of the limite property.
+     * 
+     */
+    public void setLimite(int value) {
+        this.limite = value;
+    }
 
 }

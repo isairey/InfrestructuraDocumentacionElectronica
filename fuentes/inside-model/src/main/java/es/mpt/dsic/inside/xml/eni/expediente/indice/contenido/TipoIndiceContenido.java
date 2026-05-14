@@ -17,11 +17,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>
- * Java class for TipoIndiceContenido complex type.
+ * <p>Java class for TipoIndiceContenido complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoIndiceContenido">
@@ -44,91 +42,104 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoIndiceContenido", propOrder = {"fechaIndiceElectronico",
-    "documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada"})
+@XmlType(name = "TipoIndiceContenido", propOrder = {
+    "fechaIndiceElectronico",
+    "documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada"
+})
 public class TipoIndiceContenido {
 
-  @XmlElement(name = "FechaIndiceElectronico", required = true)
-  @XmlSchemaType(name = "dateTime")
-  protected XMLGregorianCalendar fechaIndiceElectronico;
-  @XmlElements({@XmlElement(name = "DocumentoIndizado", type = TipoDocumentoIndizado.class),
-      @XmlElement(name = "ExpedienteIndizado", type = TipoIndiceContenido.class),
-      @XmlElement(name = "CarpetaIndizada", type = TipoCarpetaIndizada.class)})
-  protected List<Object> documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
-  @XmlAttribute(name = "Id")
-  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-  @XmlID
-  @XmlSchemaType(name = "ID")
-  protected String id;
+    @XmlElement(name = "FechaIndiceElectronico", required = true)
+    @XmlSchemaType(name = "dateTime")
+    protected XMLGregorianCalendar fechaIndiceElectronico;
+    @XmlElements({
+        @XmlElement(name = "ExpedienteIndizado", type = TipoIndiceContenido.class),
+        @XmlElement(name = "DocumentoIndizado", type = TipoDocumentoIndizado.class),
+        @XmlElement(name = "CarpetaIndizada", type = TipoCarpetaIndizada.class)
+    })
+    protected List<Object> documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
+    @XmlAttribute(name = "Id")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlID
+    @XmlSchemaType(name = "ID")
+    protected String id;
 
-  /**
-   * Gets the value of the fechaIndiceElectronico property.
-   * 
-   * @return possible object is {@link XMLGregorianCalendar }
-   * 
-   */
-  public XMLGregorianCalendar getFechaIndiceElectronico() {
-    return fechaIndiceElectronico;
-  }
-
-  /**
-   * Sets the value of the fechaIndiceElectronico property.
-   * 
-   * @param value allowed object is {@link XMLGregorianCalendar }
-   * 
-   */
-  public void setFechaIndiceElectronico(XMLGregorianCalendar value) {
-    this.fechaIndiceElectronico = value;
-  }
-
-  /**
-   * Gets the value of the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the
-   * documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list {@link TipoDocumentoIndizado }
-   * {@link TipoIndiceContenido } {@link TipoCarpetaIndizada }
-   * 
-   * 
-   */
-  public List<Object> getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada() {
-    if (documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada == null) {
-      documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada = new ArrayList<Object>();
+    /**
+     * Gets the value of the fechaIndiceElectronico property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public XMLGregorianCalendar getFechaIndiceElectronico() {
+        return fechaIndiceElectronico;
     }
-    return this.documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
-  }
 
-  /**
-   * Gets the value of the id property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getId() {
-    return id;
-  }
+    /**
+     * Sets the value of the fechaIndiceElectronico property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public void setFechaIndiceElectronico(XMLGregorianCalendar value) {
+        this.fechaIndiceElectronico = value;
+    }
 
-  /**
-   * Sets the value of the id property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setId(String value) {
-    this.id = value;
-  }
+    /**
+     * Gets the value of the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link TipoIndiceContenido }
+     * {@link TipoDocumentoIndizado }
+     * {@link TipoCarpetaIndizada }
+     * 
+     * 
+     */
+    public List<Object> getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada() {
+        if (documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada == null) {
+            documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada = new ArrayList<Object>();
+        }
+        return this.documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
+    }
+
+    /**
+     * Gets the value of the id property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * Sets the value of the id property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setId(String value) {
+        this.id = value;
+    }
 
 }

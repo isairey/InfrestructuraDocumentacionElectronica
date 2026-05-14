@@ -10,11 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoExpedienteEniFileInsideMtom complex type.
+ * <p>Java class for TipoExpedienteEniFileInsideMtom complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoExpedienteEniFileInsideMtom">
@@ -31,31 +29,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoExpedienteEniFileInsideMtom", propOrder = {"expedienteEniBytes"})
+@XmlType(name = "TipoExpedienteEniFileInsideMtom", propOrder = {
+    "expedienteEniBytes"
+})
 public class TipoExpedienteEniFileInsideMtom {
 
-  @XmlElement(required = true)
-  @XmlMimeType("application/octet-stream")
-  protected DataHandler expedienteEniBytes;
+    @XmlElement(required = true)
+    @XmlMimeType("application/octet-stream")
+    protected DataHandler expedienteEniBytes;
 
-  /**
-   * Gets the value of the expedienteEniBytes property.
-   * 
-   * @return possible object is {@link DataHandler }
-   * 
-   */
-  public DataHandler getExpedienteEniBytes() {
-    return expedienteEniBytes;
-  }
+    /**
+     * Gets the value of the expedienteEniBytes property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DataHandler }
+     *     
+     */
+    public DataHandler getExpedienteEniBytes() {
+        return expedienteEniBytes;
+    }
 
-  /**
-   * Sets the value of the expedienteEniBytes property.
-   * 
-   * @param value allowed object is {@link DataHandler }
-   * 
-   */
-  public void setExpedienteEniBytes(DataHandler value) {
-    this.expedienteEniBytes = value;
-  }
+    /**
+     * Sets the value of the expedienteEniBytes property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DataHandler }
+     *     
+     */
+    public void setExpedienteEniBytes(DataHandler value) {
+        this.expedienteEniBytes = value;
+    }
 
 }

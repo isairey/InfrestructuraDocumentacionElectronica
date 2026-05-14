@@ -7,11 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for consultaWsInside complex type.
+ * <p>Java class for consultaWsInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="consultaWsInside">
@@ -29,50 +27,61 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "consultaWsInside", propOrder = {"subConsulta", "metadato"})
+@XmlType(name = "consultaWsInside", propOrder = {
+    "subConsulta",
+    "metadato"
+})
 public class ConsultaWsInside {
 
-  protected SubConsultaWsInside subConsulta;
-  protected MetadatoBusquedaWsInside metadato;
+    protected SubConsultaWsInside subConsulta;
+    protected MetadatoBusquedaWsInside metadato;
 
-  /**
-   * Gets the value of the subConsulta property.
-   * 
-   * @return possible object is {@link SubConsultaWsInside }
-   * 
-   */
-  public SubConsultaWsInside getSubConsulta() {
-    return subConsulta;
-  }
+    /**
+     * Gets the value of the subConsulta property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link SubConsultaWsInside }
+     *     
+     */
+    public SubConsultaWsInside getSubConsulta() {
+        return subConsulta;
+    }
 
-  /**
-   * Sets the value of the subConsulta property.
-   * 
-   * @param value allowed object is {@link SubConsultaWsInside }
-   * 
-   */
-  public void setSubConsulta(SubConsultaWsInside value) {
-    this.subConsulta = value;
-  }
+    /**
+     * Sets the value of the subConsulta property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link SubConsultaWsInside }
+     *     
+     */
+    public void setSubConsulta(SubConsultaWsInside value) {
+        this.subConsulta = value;
+    }
 
-  /**
-   * Gets the value of the metadato property.
-   * 
-   * @return possible object is {@link MetadatoBusquedaWsInside }
-   * 
-   */
-  public MetadatoBusquedaWsInside getMetadato() {
-    return metadato;
-  }
+    /**
+     * Gets the value of the metadato property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link MetadatoBusquedaWsInside }
+     *     
+     */
+    public MetadatoBusquedaWsInside getMetadato() {
+        return metadato;
+    }
 
-  /**
-   * Sets the value of the metadato property.
-   * 
-   * @param value allowed object is {@link MetadatoBusquedaWsInside }
-   * 
-   */
-  public void setMetadato(MetadatoBusquedaWsInside value) {
-    this.metadato = value;
-  }
+    /**
+     * Sets the value of the metadato property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link MetadatoBusquedaWsInside }
+     *     
+     */
+    public void setMetadato(MetadatoBusquedaWsInside value) {
+        this.metadato = value;
+    }
 
 }

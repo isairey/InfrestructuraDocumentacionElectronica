@@ -15,11 +15,9 @@ import es.mpt.dsic.inside.xml.eni.firma.Firmas;
 
 
 /**
- * <p>
- * Java class for TipoIndice complex type.
+ * <p>Java class for TipoIndice complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoIndice">
@@ -38,78 +36,92 @@ import es.mpt.dsic.inside.xml.eni.firma.Firmas;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoIndice", propOrder = {"indiceContenido", "firmas"})
+@XmlType(name = "TipoIndice", propOrder = {
+    "indiceContenido",
+    "firmas"
+})
 public class TipoIndice {
 
-  @XmlElement(name = "IndiceContenido", required = true)
-  protected TipoIndiceContenido indiceContenido;
-  @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/firma",
-      required = true)
-  protected Firmas firmas;
-  @XmlAttribute(name = "Id")
-  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-  @XmlID
-  @XmlSchemaType(name = "ID")
-  protected String id;
+    @XmlElement(name = "IndiceContenido", required = true)
+    protected TipoIndiceContenido indiceContenido;
+    @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/firma", required = true)
+    protected Firmas firmas;
+    @XmlAttribute(name = "Id")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlID
+    @XmlSchemaType(name = "ID")
+    protected String id;
 
-  /**
-   * Gets the value of the indiceContenido property.
-   * 
-   * @return possible object is {@link TipoIndiceContenido }
-   * 
-   */
-  public TipoIndiceContenido getIndiceContenido() {
-    return indiceContenido;
-  }
+    /**
+     * Gets the value of the indiceContenido property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoIndiceContenido }
+     *     
+     */
+    public TipoIndiceContenido getIndiceContenido() {
+        return indiceContenido;
+    }
 
-  /**
-   * Sets the value of the indiceContenido property.
-   * 
-   * @param value allowed object is {@link TipoIndiceContenido }
-   * 
-   */
-  public void setIndiceContenido(TipoIndiceContenido value) {
-    this.indiceContenido = value;
-  }
+    /**
+     * Sets the value of the indiceContenido property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoIndiceContenido }
+     *     
+     */
+    public void setIndiceContenido(TipoIndiceContenido value) {
+        this.indiceContenido = value;
+    }
 
-  /**
-   * Existirá, al menos, una firma del contenido del índice del expediente electrónico.
-   * 
-   * @return possible object is {@link Firmas }
-   * 
-   */
-  public Firmas getFirmas() {
-    return firmas;
-  }
+    /**
+     * Existirá, al menos, una firma del contenido del índice del expediente electrónico.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Firmas }
+     *     
+     */
+    public Firmas getFirmas() {
+        return firmas;
+    }
 
-  /**
-   * Sets the value of the firmas property.
-   * 
-   * @param value allowed object is {@link Firmas }
-   * 
-   */
-  public void setFirmas(Firmas value) {
-    this.firmas = value;
-  }
+    /**
+     * Sets the value of the firmas property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Firmas }
+     *     
+     */
+    public void setFirmas(Firmas value) {
+        this.firmas = value;
+    }
 
-  /**
-   * Gets the value of the id property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getId() {
-    return id;
-  }
+    /**
+     * Gets the value of the id property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getId() {
+        return id;
+    }
 
-  /**
-   * Sets the value of the id property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setId(String value) {
-    this.id = value;
-  }
+    /**
+     * Sets the value of the id property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setId(String value) {
+        this.id = value;
+    }
 
 }

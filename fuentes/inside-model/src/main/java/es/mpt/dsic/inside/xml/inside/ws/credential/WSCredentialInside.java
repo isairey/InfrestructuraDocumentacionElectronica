@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for WSCredentialInside complex type.
+ * <p>Java class for WSCredentialInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="WSCredentialInside">
@@ -30,52 +28,63 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "WSCredentialInside", propOrder = {"idaplicacion", "password"})
+@XmlType(name = "WSCredentialInside", propOrder = {
+    "idaplicacion",
+    "password"
+})
 public class WSCredentialInside {
 
-  @XmlElement(required = true)
-  protected String idaplicacion;
-  @XmlElement(required = true)
-  protected String password;
+    @XmlElement(required = true)
+    protected String idaplicacion;
+    @XmlElement(required = true)
+    protected String password;
 
-  /**
-   * Gets the value of the idaplicacion property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getIdaplicacion() {
-    return idaplicacion;
-  }
+    /**
+     * Gets the value of the idaplicacion property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdaplicacion() {
+        return idaplicacion;
+    }
 
-  /**
-   * Sets the value of the idaplicacion property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setIdaplicacion(String value) {
-    this.idaplicacion = value;
-  }
+    /**
+     * Sets the value of the idaplicacion property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdaplicacion(String value) {
+        this.idaplicacion = value;
+    }
 
-  /**
-   * Gets the value of the password property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getPassword() {
-    return password;
-  }
+    /**
+     * Gets the value of the password property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getPassword() {
+        return password;
+    }
 
-  /**
-   * Sets the value of the password property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setPassword(String value) {
-    this.password = value;
-  }
+    /**
+     * Sets the value of the password property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setPassword(String value) {
+        this.password = value;
+    }
 
 }

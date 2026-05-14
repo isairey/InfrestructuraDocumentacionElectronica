@@ -10,11 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for subConsultaWsInside complex type.
+ * <p>Java class for subConsultaWsInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="subConsultaWsInside">
@@ -33,92 +31,101 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "subConsultaWsInside", propOrder = {"subConsulta", "metadato"})
+@XmlType(name = "subConsultaWsInside", propOrder = {
+    "subConsulta",
+    "metadato"
+})
 public class SubConsultaWsInside {
 
-  protected List<SubConsultaWsInside> subConsulta;
-  protected List<MetadatoBusquedaWsInside> metadato;
-  @XmlAttribute(name = "tipo")
-  protected TipoSubconsulta tipo;
+    protected List<SubConsultaWsInside> subConsulta;
+    protected List<MetadatoBusquedaWsInside> metadato;
+    @XmlAttribute(name = "tipo")
+    protected TipoSubconsulta tipo;
 
-  /**
-   * Gets the value of the subConsulta property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the subConsulta property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getSubConsulta().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list {@link SubConsultaWsInside }
-   * 
-   * 
-   */
-  public List<SubConsultaWsInside> getSubConsulta() {
-    if (subConsulta == null) {
-      subConsulta = new ArrayList<SubConsultaWsInside>();
+    /**
+     * Gets the value of the subConsulta property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the subConsulta property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getSubConsulta().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link SubConsultaWsInside }
+     * 
+     * 
+     */
+    public List<SubConsultaWsInside> getSubConsulta() {
+        if (subConsulta == null) {
+            subConsulta = new ArrayList<SubConsultaWsInside>();
+        }
+        return this.subConsulta;
     }
-    return this.subConsulta;
-  }
 
-  /**
-   * Gets the value of the metadato property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the metadato property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getMetadato().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list {@link MetadatoBusquedaWsInside }
-   * 
-   * 
-   */
-  public List<MetadatoBusquedaWsInside> getMetadato() {
-    if (metadato == null) {
-      metadato = new ArrayList<MetadatoBusquedaWsInside>();
+    /**
+     * Gets the value of the metadato property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the metadato property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getMetadato().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link MetadatoBusquedaWsInside }
+     * 
+     * 
+     */
+    public List<MetadatoBusquedaWsInside> getMetadato() {
+        if (metadato == null) {
+            metadato = new ArrayList<MetadatoBusquedaWsInside>();
+        }
+        return this.metadato;
     }
-    return this.metadato;
-  }
 
-  /**
-   * Gets the value of the tipo property.
-   * 
-   * @return possible object is {@link TipoSubconsulta }
-   * 
-   */
-  public TipoSubconsulta getTipo() {
-    if (tipo == null) {
-      return TipoSubconsulta.AND;
-    } else {
-      return tipo;
+    /**
+     * Gets the value of the tipo property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoSubconsulta }
+     *     
+     */
+    public TipoSubconsulta getTipo() {
+        if (tipo == null) {
+            return TipoSubconsulta.AND;
+        } else {
+            return tipo;
+        }
     }
-  }
 
-  /**
-   * Sets the value of the tipo property.
-   * 
-   * @param value allowed object is {@link TipoSubconsulta }
-   * 
-   */
-  public void setTipo(TipoSubconsulta value) {
-    this.tipo = value;
-  }
+    /**
+     * Sets the value of the tipo property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoSubconsulta }
+     *     
+     */
+    public void setTipo(TipoSubconsulta value) {
+        this.tipo = value;
+    }
 
 }

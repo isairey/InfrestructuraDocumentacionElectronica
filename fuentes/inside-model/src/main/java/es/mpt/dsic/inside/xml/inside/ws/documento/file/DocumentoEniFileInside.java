@@ -9,11 +9,9 @@ import es.mpt.dsic.inside.xml.eni.documento.TipoDocumento;
 
 
 /**
- * <p>
- * Java class for DocumentoEniFileInside complex type.
+ * <p>Java class for DocumentoEniFileInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="DocumentoEniFileInside">
@@ -31,51 +29,61 @@ import es.mpt.dsic.inside.xml.eni.documento.TipoDocumento;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DocumentoEniFileInside", propOrder = {"documento", "documentoEniBytes"})
+@XmlType(name = "DocumentoEniFileInside", propOrder = {
+    "documento",
+    "documentoEniBytes"
+})
 public class DocumentoEniFileInside {
 
-  @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/documento-e",
-      required = true)
-  protected TipoDocumento documento;
-  @XmlElement(required = true)
-  protected byte[] documentoEniBytes;
+    @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/documento-e", required = true)
+    protected TipoDocumento documento;
+    @XmlElement(required = true)
+    protected byte[] documentoEniBytes;
 
-  /**
-   * Gets the value of the documento property.
-   * 
-   * @return possible object is {@link TipoDocumento }
-   * 
-   */
-  public TipoDocumento getDocumento() {
-    return documento;
-  }
+    /**
+     * Gets the value of the documento property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoDocumento }
+     *     
+     */
+    public TipoDocumento getDocumento() {
+        return documento;
+    }
 
-  /**
-   * Sets the value of the documento property.
-   * 
-   * @param value allowed object is {@link TipoDocumento }
-   * 
-   */
-  public void setDocumento(TipoDocumento value) {
-    this.documento = value;
-  }
+    /**
+     * Sets the value of the documento property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoDocumento }
+     *     
+     */
+    public void setDocumento(TipoDocumento value) {
+        this.documento = value;
+    }
 
-  /**
-   * Gets the value of the documentoEniBytes property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getDocumentoEniBytes() {
-    return documentoEniBytes;
-  }
+    /**
+     * Gets the value of the documentoEniBytes property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getDocumentoEniBytes() {
+        return documentoEniBytes;
+    }
 
-  /**
-   * Sets the value of the documentoEniBytes property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setDocumentoEniBytes(byte[] value) {
-    this.documentoEniBytes = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the documentoEniBytes property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setDocumentoEniBytes(byte[] value) {
+        this.documentoEniBytes = ((byte[]) value);
+    }
 
 }

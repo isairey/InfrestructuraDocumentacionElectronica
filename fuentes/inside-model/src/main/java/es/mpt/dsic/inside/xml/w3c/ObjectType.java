@@ -17,11 +17,9 @@ import org.w3c.dom.Element;
 
 
 /**
- * <p>
- * Java class for ObjectType complex type.
+ * <p>Java class for ObjectType complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ObjectType">
@@ -41,110 +39,126 @@ import org.w3c.dom.Element;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ObjectType", propOrder = {"content"})
+@XmlType(name = "ObjectType", propOrder = {
+    "content"
+})
 public class ObjectType {
 
-  @XmlMixed
-  @XmlAnyElement(lax = true)
-  protected List<Object> content;
-  @XmlAttribute(name = "Id")
-  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-  @XmlID
-  @XmlSchemaType(name = "ID")
-  protected String id;
-  @XmlAttribute(name = "MimeType")
-  protected String mimeType;
-  @XmlAttribute(name = "Encoding")
-  @XmlSchemaType(name = "anyURI")
-  protected String encoding;
+    @XmlMixed
+    @XmlAnyElement(lax = true)
+    protected List<Object> content;
+    @XmlAttribute(name = "Id")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlID
+    @XmlSchemaType(name = "ID")
+    protected String id;
+    @XmlAttribute(name = "MimeType")
+    protected String mimeType;
+    @XmlAttribute(name = "Encoding")
+    @XmlSchemaType(name = "anyURI")
+    protected String encoding;
 
-  /**
-   * Gets the value of the content property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the content property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getContent().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list {@link Element } {@link Object }
-   * {@link String }
-   * 
-   * 
-   */
-  public List<Object> getContent() {
-    if (content == null) {
-      content = new ArrayList<Object>();
+    /**
+     * Gets the value of the content property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the content property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getContent().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Element }
+     * {@link Object }
+     * {@link String }
+     * 
+     * 
+     */
+    public List<Object> getContent() {
+        if (content == null) {
+            content = new ArrayList<Object>();
+        }
+        return this.content;
     }
-    return this.content;
-  }
 
-  /**
-   * Gets the value of the id property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getId() {
-    return id;
-  }
+    /**
+     * Gets the value of the id property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getId() {
+        return id;
+    }
 
-  /**
-   * Sets the value of the id property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setId(String value) {
-    this.id = value;
-  }
+    /**
+     * Sets the value of the id property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setId(String value) {
+        this.id = value;
+    }
 
-  /**
-   * Gets the value of the mimeType property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getMimeType() {
-    return mimeType;
-  }
+    /**
+     * Gets the value of the mimeType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMimeType() {
+        return mimeType;
+    }
 
-  /**
-   * Sets the value of the mimeType property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setMimeType(String value) {
-    this.mimeType = value;
-  }
+    /**
+     * Sets the value of the mimeType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMimeType(String value) {
+        this.mimeType = value;
+    }
 
-  /**
-   * Gets the value of the encoding property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getEncoding() {
-    return encoding;
-  }
+    /**
+     * Gets the value of the encoding property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getEncoding() {
+        return encoding;
+    }
 
-  /**
-   * Sets the value of the encoding property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setEncoding(String value) {
-    this.encoding = value;
-  }
+    /**
+     * Sets the value of the encoding property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setEncoding(String value) {
+        this.encoding = value;
+    }
 
 }

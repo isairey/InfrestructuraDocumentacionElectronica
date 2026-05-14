@@ -13,11 +13,9 @@ import org.w3c.dom.Element;
 
 
 /**
- * <p>
- * Java class for SPKIDataType complex type.
+ * <p>Java class for SPKIDataType complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="SPKIDataType">
@@ -35,41 +33,44 @@ import org.w3c.dom.Element;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SPKIDataType", propOrder = {"spkiSexpAndAny"})
+@XmlType(name = "SPKIDataType", propOrder = {
+    "spkiSexpAndAny"
+})
 public class SPKIDataType {
 
-  @XmlElementRef(name = "SPKISexp", namespace = "http://www.w3.org/2000/09/xmldsig#",
-      type = JAXBElement.class)
-  @XmlAnyElement(lax = true)
-  protected List<Object> spkiSexpAndAny;
+    @XmlElementRef(name = "SPKISexp", namespace = "http://www.w3.org/2000/09/xmldsig#", type = JAXBElement.class)
+    @XmlAnyElement(lax = true)
+    protected List<Object> spkiSexpAndAny;
 
-  /**
-   * Gets the value of the spkiSexpAndAny property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the spkiSexpAndAny property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getSPKISexpAndAny().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list {@link Element } {@link JAXBElement
-   * }{@code <}{@link byte[]}{@code >} {@link Object }
-   * 
-   * 
-   */
-  public List<Object> getSPKISexpAndAny() {
-    if (spkiSexpAndAny == null) {
-      spkiSexpAndAny = new ArrayList<Object>();
+    /**
+     * Gets the value of the spkiSexpAndAny property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the spkiSexpAndAny property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getSPKISexpAndAny().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Element }
+     * {@link Object }
+     * {@link JAXBElement }{@code <}{@link byte[]}{@code >}
+     * 
+     * 
+     */
+    public List<Object> getSPKISexpAndAny() {
+        if (spkiSexpAndAny == null) {
+            spkiSexpAndAny = new ArrayList<Object>();
+        }
+        return this.spkiSexpAndAny;
     }
-    return this.spkiSexpAndAny;
-  }
 
 }

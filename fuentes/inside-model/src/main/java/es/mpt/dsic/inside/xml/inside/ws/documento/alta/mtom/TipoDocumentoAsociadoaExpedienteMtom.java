@@ -10,11 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * Indica la asociación de un documento a un expediente .
  * 
- * <p>
- * Java class for TipoDocumentoAsociadoaExpedienteMtom complex type.
+ * <p>Java class for TipoDocumentoAsociadoaExpedienteMtom complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoDocumentoAsociadoaExpedienteMtom">
@@ -32,52 +30,62 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoDocumentoAsociadoaExpedienteMtom",
-    propOrder = {"identificadorExpediente", "identificadorCarpeta"})
+@XmlType(name = "TipoDocumentoAsociadoaExpedienteMtom", propOrder = {
+    "identificadorExpediente",
+    "identificadorCarpeta"
+})
 public class TipoDocumentoAsociadoaExpedienteMtom {
 
-  @XmlElement(required = true)
-  protected String identificadorExpediente;
-  protected String identificadorCarpeta;
+    @XmlElement(required = true)
+    protected String identificadorExpediente;
+    protected String identificadorCarpeta;
 
-  /**
-   * Gets the value of the identificadorExpediente property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getIdentificadorExpediente() {
-    return identificadorExpediente;
-  }
+    /**
+     * Gets the value of the identificadorExpediente property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdentificadorExpediente() {
+        return identificadorExpediente;
+    }
 
-  /**
-   * Sets the value of the identificadorExpediente property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setIdentificadorExpediente(String value) {
-    this.identificadorExpediente = value;
-  }
+    /**
+     * Sets the value of the identificadorExpediente property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdentificadorExpediente(String value) {
+        this.identificadorExpediente = value;
+    }
 
-  /**
-   * Gets the value of the identificadorCarpeta property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getIdentificadorCarpeta() {
-    return identificadorCarpeta;
-  }
+    /**
+     * Gets the value of the identificadorCarpeta property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdentificadorCarpeta() {
+        return identificadorCarpeta;
+    }
 
-  /**
-   * Sets the value of the identificadorCarpeta property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setIdentificadorCarpeta(String value) {
-    this.identificadorCarpeta = value;
-  }
+    /**
+     * Sets the value of the identificadorCarpeta property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdentificadorCarpeta(String value) {
+        this.identificadorCarpeta = value;
+    }
 
 }

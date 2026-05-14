@@ -9,15 +9,11 @@ import es.mpt.dsic.inside.xml.eni.expediente.TipoExpediente;
 
 
 /**
- * Para el intercambio de un expediente electrónico, se envía en primer lugar, el índice del
- * expediente. Posteriormente, se enviarán los documentos que lo componen , uno a uno, y siguiendo
- * la distribución reflejada en el contenido del índice.
+ * Para el intercambio de un expediente electrónico, se envía en primer lugar, el índice del expediente. Posteriormente, se enviarán los documentos que lo componen , uno a uno,  y siguiendo la distribución reflejada en el contenido del índice.
  * 
- * <p>
- * Java class for ExpedienteEniFileInside complex type.
+ * <p>Java class for ExpedienteEniFileInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ExpedienteEniFileInside">
@@ -35,51 +31,61 @@ import es.mpt.dsic.inside.xml.eni.expediente.TipoExpediente;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ExpedienteEniFileInside", propOrder = {"expediente", "expedienteEniBytes"})
+@XmlType(name = "ExpedienteEniFileInside", propOrder = {
+    "expediente",
+    "expedienteEniBytes"
+})
 public class ExpedienteEniFileInside {
 
-  @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/expediente-e",
-      required = true)
-  protected TipoExpediente expediente;
-  @XmlElement(required = true)
-  protected byte[] expedienteEniBytes;
+    @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/expediente-e", required = true)
+    protected TipoExpediente expediente;
+    @XmlElement(required = true)
+    protected byte[] expedienteEniBytes;
 
-  /**
-   * Gets the value of the expediente property.
-   * 
-   * @return possible object is {@link TipoExpediente }
-   * 
-   */
-  public TipoExpediente getExpediente() {
-    return expediente;
-  }
+    /**
+     * Gets the value of the expediente property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoExpediente }
+     *     
+     */
+    public TipoExpediente getExpediente() {
+        return expediente;
+    }
 
-  /**
-   * Sets the value of the expediente property.
-   * 
-   * @param value allowed object is {@link TipoExpediente }
-   * 
-   */
-  public void setExpediente(TipoExpediente value) {
-    this.expediente = value;
-  }
+    /**
+     * Sets the value of the expediente property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoExpediente }
+     *     
+     */
+    public void setExpediente(TipoExpediente value) {
+        this.expediente = value;
+    }
 
-  /**
-   * Gets the value of the expedienteEniBytes property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getExpedienteEniBytes() {
-    return expedienteEniBytes;
-  }
+    /**
+     * Gets the value of the expedienteEniBytes property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getExpedienteEniBytes() {
+        return expedienteEniBytes;
+    }
 
-  /**
-   * Sets the value of the expedienteEniBytes property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setExpedienteEniBytes(byte[] value) {
-    this.expedienteEniBytes = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the expedienteEniBytes property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setExpedienteEniBytes(byte[] value) {
+        this.expedienteEniBytes = ((byte[]) value);
+    }
 
 }

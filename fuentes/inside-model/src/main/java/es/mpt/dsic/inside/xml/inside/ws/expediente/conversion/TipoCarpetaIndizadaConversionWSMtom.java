@@ -11,11 +11,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoCarpetaIndizadaConversionWSMtom complex type.
+ * <p>Java class for TipoCarpetaIndizadaConversionWSMtom complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoCarpetaIndizadaConversionWSMtom">
@@ -37,65 +35,74 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoCarpetaIndizadaConversionWSMtom",
-    propOrder = {"identificadorCarpeta", "documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada"})
+@XmlType(name = "TipoCarpetaIndizadaConversionWSMtom", propOrder = {
+    "identificadorCarpeta",
+    "documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada"
+})
 public class TipoCarpetaIndizadaConversionWSMtom {
 
-  @XmlElement(name = "IdentificadorCarpeta", required = true)
-  protected String identificadorCarpeta;
-  @XmlElements({@XmlElement(name = "ExpedienteIndizado", type = TipoIndiceConversionWSMtom.class),
-      @XmlElement(name = "CarpetaIndizada", type = TipoCarpetaIndizadaConversionWSMtom.class),
-      @XmlElement(name = "DocumentoIndizado", type = TipoDocumentoIndizadoConversionWSMtom.class)})
-  protected List<Object> documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
+    @XmlElement(name = "IdentificadorCarpeta", required = true)
+    protected String identificadorCarpeta;
+    @XmlElements({
+        @XmlElement(name = "DocumentoIndizado", type = TipoDocumentoIndizadoConversionWSMtom.class),
+        @XmlElement(name = "CarpetaIndizada", type = TipoCarpetaIndizadaConversionWSMtom.class),
+        @XmlElement(name = "ExpedienteIndizado", type = TipoIndiceConversionWSMtom.class)
+    })
+    protected List<Object> documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
 
-  /**
-   * Gets the value of the identificadorCarpeta property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getIdentificadorCarpeta() {
-    return identificadorCarpeta;
-  }
-
-  /**
-   * Sets the value of the identificadorCarpeta property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setIdentificadorCarpeta(String value) {
-    this.identificadorCarpeta = value;
-  }
-
-  /**
-   * Gets the value of the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the
-   * documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list {@link TipoIndiceConversionWSMtom }
-   * {@link TipoCarpetaIndizadaConversionWSMtom } {@link TipoDocumentoIndizadoConversionWSMtom }
-   * 
-   * 
-   */
-  public List<Object> getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada() {
-    if (documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada == null) {
-      documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada = new ArrayList<Object>();
+    /**
+     * Gets the value of the identificadorCarpeta property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdentificadorCarpeta() {
+        return identificadorCarpeta;
     }
-    return this.documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
-  }
+
+    /**
+     * Sets the value of the identificadorCarpeta property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdentificadorCarpeta(String value) {
+        this.identificadorCarpeta = value;
+    }
+
+    /**
+     * Gets the value of the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link TipoDocumentoIndizadoConversionWSMtom }
+     * {@link TipoCarpetaIndizadaConversionWSMtom }
+     * {@link TipoIndiceConversionWSMtom }
+     * 
+     * 
+     */
+    public List<Object> getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada() {
+        if (documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada == null) {
+            documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada = new ArrayList<Object>();
+        }
+        return this.documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
+    }
 
 }

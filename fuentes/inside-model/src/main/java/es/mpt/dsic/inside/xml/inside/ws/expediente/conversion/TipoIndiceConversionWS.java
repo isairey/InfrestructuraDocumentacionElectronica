@@ -13,11 +13,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>
- * Java class for TipoIndiceConversionWS complex type.
+ * <p>Java class for TipoIndiceConversionWS complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoIndiceConversionWS">
@@ -39,68 +37,75 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoIndiceConversionWS", propOrder = {"fechaIndiceElectronico",
-    "documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada"})
+@XmlType(name = "TipoIndiceConversionWS", propOrder = {
+    "fechaIndiceElectronico",
+    "documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada"
+})
 public class TipoIndiceConversionWS {
 
-  @XmlElement(name = "FechaIndiceElectronico", required = true)
-  @XmlSchemaType(name = "dateTime")
-  protected XMLGregorianCalendar fechaIndiceElectronico;
-  @XmlElements({
-      @XmlElement(name = "DocumentoIndizado", type = TipoDocumentoIndizadoConversionWS.class),
-      @XmlElement(name = "ExpedienteIndizado", type = TipoIndiceConversionWS.class),
-      @XmlElement(name = "CarpetaIndizada", type = TipoCarpetaIndizadaConversionWS.class)})
-  protected List<Object> documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
+    @XmlElement(name = "FechaIndiceElectronico", required = true)
+    @XmlSchemaType(name = "dateTime")
+    protected XMLGregorianCalendar fechaIndiceElectronico;
+    @XmlElements({
+        @XmlElement(name = "DocumentoIndizado", type = TipoDocumentoIndizadoConversionWS.class),
+        @XmlElement(name = "CarpetaIndizada", type = TipoCarpetaIndizadaConversionWS.class),
+        @XmlElement(name = "ExpedienteIndizado", type = TipoIndiceConversionWS.class)
+    })
+    protected List<Object> documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
 
-  /**
-   * Gets the value of the fechaIndiceElectronico property.
-   * 
-   * @return possible object is {@link XMLGregorianCalendar }
-   * 
-   */
-  public XMLGregorianCalendar getFechaIndiceElectronico() {
-    return fechaIndiceElectronico;
-  }
-
-  /**
-   * Sets the value of the fechaIndiceElectronico property.
-   * 
-   * @param value allowed object is {@link XMLGregorianCalendar }
-   * 
-   */
-  public void setFechaIndiceElectronico(XMLGregorianCalendar value) {
-    this.fechaIndiceElectronico = value;
-  }
-
-  /**
-   * Gets the value of the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the
-   * documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list
-   * {@link TipoDocumentoIndizadoConversionWS } {@link TipoIndiceConversionWS }
-   * {@link TipoCarpetaIndizadaConversionWS }
-   * 
-   * 
-   */
-  public List<Object> getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada() {
-    if (documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada == null) {
-      documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada = new ArrayList<Object>();
+    /**
+     * Gets the value of the fechaIndiceElectronico property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public XMLGregorianCalendar getFechaIndiceElectronico() {
+        return fechaIndiceElectronico;
     }
-    return this.documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
-  }
+
+    /**
+     * Sets the value of the fechaIndiceElectronico property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public void setFechaIndiceElectronico(XMLGregorianCalendar value) {
+        this.fechaIndiceElectronico = value;
+    }
+
+    /**
+     * Gets the value of the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link TipoDocumentoIndizadoConversionWS }
+     * {@link TipoCarpetaIndizadaConversionWS }
+     * {@link TipoIndiceConversionWS }
+     * 
+     * 
+     */
+    public List<Object> getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada() {
+        if (documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada == null) {
+            documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada = new ArrayList<Object>();
+        }
+        return this.documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
+    }
 
 }

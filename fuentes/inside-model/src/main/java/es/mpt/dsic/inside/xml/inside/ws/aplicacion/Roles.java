@@ -7,11 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for Roles complex type.
+ * <p>Java class for Roles complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="Roles">
@@ -34,128 +32,135 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Roles", propOrder = {"altaExpediente", "modificarExpediente", "leerExpediente",
-    "altaDocumento", "modificarDocumento", "leerDocumento", "administrarPermisos"})
+@XmlType(name = "Roles", propOrder = {
+    "altaExpediente",
+    "modificarExpediente",
+    "leerExpediente",
+    "altaDocumento",
+    "modificarDocumento",
+    "leerDocumento",
+    "administrarPermisos"
+})
 public class Roles {
 
-  protected boolean altaExpediente;
-  protected boolean modificarExpediente;
-  protected boolean leerExpediente;
-  protected boolean altaDocumento;
-  protected boolean modificarDocumento;
-  protected boolean leerDocumento;
-  protected boolean administrarPermisos;
+    protected boolean altaExpediente;
+    protected boolean modificarExpediente;
+    protected boolean leerExpediente;
+    protected boolean altaDocumento;
+    protected boolean modificarDocumento;
+    protected boolean leerDocumento;
+    protected boolean administrarPermisos;
 
-  /**
-   * Gets the value of the altaExpediente property.
-   * 
-   */
-  public boolean isAltaExpediente() {
-    return altaExpediente;
-  }
+    /**
+     * Gets the value of the altaExpediente property.
+     * 
+     */
+    public boolean isAltaExpediente() {
+        return altaExpediente;
+    }
 
-  /**
-   * Sets the value of the altaExpediente property.
-   * 
-   */
-  public void setAltaExpediente(boolean value) {
-    this.altaExpediente = value;
-  }
+    /**
+     * Sets the value of the altaExpediente property.
+     * 
+     */
+    public void setAltaExpediente(boolean value) {
+        this.altaExpediente = value;
+    }
 
-  /**
-   * Gets the value of the modificarExpediente property.
-   * 
-   */
-  public boolean isModificarExpediente() {
-    return modificarExpediente;
-  }
+    /**
+     * Gets the value of the modificarExpediente property.
+     * 
+     */
+    public boolean isModificarExpediente() {
+        return modificarExpediente;
+    }
 
-  /**
-   * Sets the value of the modificarExpediente property.
-   * 
-   */
-  public void setModificarExpediente(boolean value) {
-    this.modificarExpediente = value;
-  }
+    /**
+     * Sets the value of the modificarExpediente property.
+     * 
+     */
+    public void setModificarExpediente(boolean value) {
+        this.modificarExpediente = value;
+    }
 
-  /**
-   * Gets the value of the leerExpediente property.
-   * 
-   */
-  public boolean isLeerExpediente() {
-    return leerExpediente;
-  }
+    /**
+     * Gets the value of the leerExpediente property.
+     * 
+     */
+    public boolean isLeerExpediente() {
+        return leerExpediente;
+    }
 
-  /**
-   * Sets the value of the leerExpediente property.
-   * 
-   */
-  public void setLeerExpediente(boolean value) {
-    this.leerExpediente = value;
-  }
+    /**
+     * Sets the value of the leerExpediente property.
+     * 
+     */
+    public void setLeerExpediente(boolean value) {
+        this.leerExpediente = value;
+    }
 
-  /**
-   * Gets the value of the altaDocumento property.
-   * 
-   */
-  public boolean isAltaDocumento() {
-    return altaDocumento;
-  }
+    /**
+     * Gets the value of the altaDocumento property.
+     * 
+     */
+    public boolean isAltaDocumento() {
+        return altaDocumento;
+    }
 
-  /**
-   * Sets the value of the altaDocumento property.
-   * 
-   */
-  public void setAltaDocumento(boolean value) {
-    this.altaDocumento = value;
-  }
+    /**
+     * Sets the value of the altaDocumento property.
+     * 
+     */
+    public void setAltaDocumento(boolean value) {
+        this.altaDocumento = value;
+    }
 
-  /**
-   * Gets the value of the modificarDocumento property.
-   * 
-   */
-  public boolean isModificarDocumento() {
-    return modificarDocumento;
-  }
+    /**
+     * Gets the value of the modificarDocumento property.
+     * 
+     */
+    public boolean isModificarDocumento() {
+        return modificarDocumento;
+    }
 
-  /**
-   * Sets the value of the modificarDocumento property.
-   * 
-   */
-  public void setModificarDocumento(boolean value) {
-    this.modificarDocumento = value;
-  }
+    /**
+     * Sets the value of the modificarDocumento property.
+     * 
+     */
+    public void setModificarDocumento(boolean value) {
+        this.modificarDocumento = value;
+    }
 
-  /**
-   * Gets the value of the leerDocumento property.
-   * 
-   */
-  public boolean isLeerDocumento() {
-    return leerDocumento;
-  }
+    /**
+     * Gets the value of the leerDocumento property.
+     * 
+     */
+    public boolean isLeerDocumento() {
+        return leerDocumento;
+    }
 
-  /**
-   * Sets the value of the leerDocumento property.
-   * 
-   */
-  public void setLeerDocumento(boolean value) {
-    this.leerDocumento = value;
-  }
+    /**
+     * Sets the value of the leerDocumento property.
+     * 
+     */
+    public void setLeerDocumento(boolean value) {
+        this.leerDocumento = value;
+    }
 
-  /**
-   * Gets the value of the administrarPermisos property.
-   * 
-   */
-  public boolean isAdministrarPermisos() {
-    return administrarPermisos;
-  }
+    /**
+     * Gets the value of the administrarPermisos property.
+     * 
+     */
+    public boolean isAdministrarPermisos() {
+        return administrarPermisos;
+    }
 
-  /**
-   * Sets the value of the administrarPermisos property.
-   * 
-   */
-  public void setAdministrarPermisos(boolean value) {
-    this.administrarPermisos = value;
-  }
+    /**
+     * Sets the value of the administrarPermisos property.
+     * 
+     */
+    public void setAdministrarPermisos(boolean value) {
+        this.administrarPermisos = value;
+    }
 
 }

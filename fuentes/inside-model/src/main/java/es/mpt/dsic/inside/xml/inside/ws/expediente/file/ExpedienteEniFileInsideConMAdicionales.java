@@ -10,11 +10,9 @@ import es.mpt.dsic.inside.xml.inside.TipoMetadatosAdicionales;
 
 
 /**
- * <p>
- * Java class for ExpedienteEniFileInsideConMAdicionales complex type.
+ * <p>Java class for ExpedienteEniFileInsideConMAdicionales complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ExpedienteEniFileInsideConMAdicionales">
@@ -33,73 +31,87 @@ import es.mpt.dsic.inside.xml.inside.TipoMetadatosAdicionales;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ExpedienteEniFileInsideConMAdicionales",
-    propOrder = {"expediente", "metadatosAdicionales", "expedienteEniBytes"})
+@XmlType(name = "ExpedienteEniFileInsideConMAdicionales", propOrder = {
+    "expediente",
+    "metadatosAdicionales",
+    "expedienteEniBytes"
+})
 public class ExpedienteEniFileInsideConMAdicionales {
 
-  @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/expediente-e",
-      required = true)
-  protected TipoExpediente expediente;
-  protected TipoMetadatosAdicionales metadatosAdicionales;
-  @XmlElement(required = true)
-  protected byte[] expedienteEniBytes;
+    @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/expediente-e", required = true)
+    protected TipoExpediente expediente;
+    protected TipoMetadatosAdicionales metadatosAdicionales;
+    @XmlElement(required = true)
+    protected byte[] expedienteEniBytes;
 
-  /**
-   * Gets the value of the expediente property.
-   * 
-   * @return possible object is {@link TipoExpediente }
-   * 
-   */
-  public TipoExpediente getExpediente() {
-    return expediente;
-  }
+    /**
+     * Gets the value of the expediente property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoExpediente }
+     *     
+     */
+    public TipoExpediente getExpediente() {
+        return expediente;
+    }
 
-  /**
-   * Sets the value of the expediente property.
-   * 
-   * @param value allowed object is {@link TipoExpediente }
-   * 
-   */
-  public void setExpediente(TipoExpediente value) {
-    this.expediente = value;
-  }
+    /**
+     * Sets the value of the expediente property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoExpediente }
+     *     
+     */
+    public void setExpediente(TipoExpediente value) {
+        this.expediente = value;
+    }
 
-  /**
-   * Gets the value of the metadatosAdicionales property.
-   * 
-   * @return possible object is {@link TipoMetadatosAdicionales }
-   * 
-   */
-  public TipoMetadatosAdicionales getMetadatosAdicionales() {
-    return metadatosAdicionales;
-  }
+    /**
+     * Gets the value of the metadatosAdicionales property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoMetadatosAdicionales }
+     *     
+     */
+    public TipoMetadatosAdicionales getMetadatosAdicionales() {
+        return metadatosAdicionales;
+    }
 
-  /**
-   * Sets the value of the metadatosAdicionales property.
-   * 
-   * @param value allowed object is {@link TipoMetadatosAdicionales }
-   * 
-   */
-  public void setMetadatosAdicionales(TipoMetadatosAdicionales value) {
-    this.metadatosAdicionales = value;
-  }
+    /**
+     * Sets the value of the metadatosAdicionales property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoMetadatosAdicionales }
+     *     
+     */
+    public void setMetadatosAdicionales(TipoMetadatosAdicionales value) {
+        this.metadatosAdicionales = value;
+    }
 
-  /**
-   * Gets the value of the expedienteEniBytes property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getExpedienteEniBytes() {
-    return expedienteEniBytes;
-  }
+    /**
+     * Gets the value of the expedienteEniBytes property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getExpedienteEniBytes() {
+        return expedienteEniBytes;
+    }
 
-  /**
-   * Sets the value of the expedienteEniBytes property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setExpedienteEniBytes(byte[] value) {
-    this.expedienteEniBytes = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the expedienteEniBytes property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setExpedienteEniBytes(byte[] value) {
+        this.expedienteEniBytes = ((byte[]) value);
+    }
 
 }

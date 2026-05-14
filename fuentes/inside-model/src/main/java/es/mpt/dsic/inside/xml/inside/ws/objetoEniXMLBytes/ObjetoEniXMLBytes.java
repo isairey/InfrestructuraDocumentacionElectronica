@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for ObjetoEniXMLBytes complex type.
+ * <p>Java class for ObjetoEniXMLBytes complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ObjetoEniXMLBytes">
@@ -30,50 +28,61 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ObjetoEniXMLBytes", propOrder = {"mensaje", "atributoObjetoEniXMLBytes"})
+@XmlType(name = "ObjetoEniXMLBytes", propOrder = {
+    "mensaje",
+    "atributoObjetoEniXMLBytes"
+})
 public class ObjetoEniXMLBytes {
 
-  @XmlElement(required = true)
-  protected String mensaje;
-  @XmlElement(required = true)
-  protected byte[] atributoObjetoEniXMLBytes;
+    @XmlElement(required = true)
+    protected String mensaje;
+    @XmlElement(required = true)
+    protected byte[] atributoObjetoEniXMLBytes;
 
-  /**
-   * Gets the value of the mensaje property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getMensaje() {
-    return mensaje;
-  }
+    /**
+     * Gets the value of the mensaje property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMensaje() {
+        return mensaje;
+    }
 
-  /**
-   * Sets the value of the mensaje property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setMensaje(String value) {
-    this.mensaje = value;
-  }
+    /**
+     * Sets the value of the mensaje property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMensaje(String value) {
+        this.mensaje = value;
+    }
 
-  /**
-   * Gets the value of the atributoObjetoEniXMLBytes property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getAtributoObjetoEniXMLBytes() {
-    return atributoObjetoEniXMLBytes;
-  }
+    /**
+     * Gets the value of the atributoObjetoEniXMLBytes property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getAtributoObjetoEniXMLBytes() {
+        return atributoObjetoEniXMLBytes;
+    }
 
-  /**
-   * Sets the value of the atributoObjetoEniXMLBytes property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setAtributoObjetoEniXMLBytes(byte[] value) {
-    this.atributoObjetoEniXMLBytes = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the atributoObjetoEniXMLBytes property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setAtributoObjetoEniXMLBytes(byte[] value) {
+        this.atributoObjetoEniXMLBytes = ((byte[]) value);
+    }
 
 }

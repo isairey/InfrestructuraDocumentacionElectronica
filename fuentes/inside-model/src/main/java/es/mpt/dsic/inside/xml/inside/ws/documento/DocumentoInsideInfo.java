@@ -12,11 +12,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>
- * Java class for DocumentoInsideInfo complex type.
+ * <p>Java class for DocumentoInsideInfo complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="DocumentoInsideInfo">
@@ -33,33 +31,39 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DocumentoInsideInfo", propOrder = {"identificador"})
+@XmlType(name = "DocumentoInsideInfo", propOrder = {
+    "identificador"
+})
 public class DocumentoInsideInfo {
 
-  @XmlElement(name = "Identificador", required = true)
-  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-  @XmlID
-  @XmlSchemaType(name = "ID")
-  protected String identificador;
+    @XmlElement(name = "Identificador", required = true)
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlID
+    @XmlSchemaType(name = "ID")
+    protected String identificador;
 
-  /**
-   * Gets the value of the identificador property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getIdentificador() {
-    return identificador;
-  }
+    /**
+     * Gets the value of the identificador property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdentificador() {
+        return identificador;
+    }
 
-  /**
-   * Sets the value of the identificador property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setIdentificador(String value) {
-    this.identificador = value;
-  }
+    /**
+     * Sets the value of the identificador property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdentificador(String value) {
+        this.identificador = value;
+    }
 
 }

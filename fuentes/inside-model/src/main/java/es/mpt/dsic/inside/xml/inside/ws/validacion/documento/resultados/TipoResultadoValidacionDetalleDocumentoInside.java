@@ -9,11 +9,9 @@ import es.mpt.dsic.inside.xml.inside.ws.validacion.documento.TipoOpcionValidacio
 
 
 /**
- * <p>
- * Java class for TipoResultadoValidacionDetalleDocumentoInside complex type.
+ * <p>Java class for TipoResultadoValidacionDetalleDocumentoInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoResultadoValidacionDetalleDocumentoInside">
@@ -32,70 +30,81 @@ import es.mpt.dsic.inside.xml.inside.ws.validacion.documento.TipoOpcionValidacio
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoResultadoValidacionDetalleDocumentoInside",
-    propOrder = {"tipoValidacion", "resultadoValidacion", "detalleValidacion"})
+@XmlType(name = "TipoResultadoValidacionDetalleDocumentoInside", propOrder = {
+    "tipoValidacion",
+    "resultadoValidacion",
+    "detalleValidacion"
+})
 public class TipoResultadoValidacionDetalleDocumentoInside {
 
-  @XmlElement(required = true)
-  protected TipoOpcionValidacionDocumento tipoValidacion;
-  protected boolean resultadoValidacion;
-  @XmlElement(required = true)
-  protected String detalleValidacion;
+    @XmlElement(required = true)
+    protected TipoOpcionValidacionDocumento tipoValidacion;
+    protected boolean resultadoValidacion;
+    @XmlElement(required = true)
+    protected String detalleValidacion;
 
-  /**
-   * Gets the value of the tipoValidacion property.
-   * 
-   * @return possible object is {@link TipoOpcionValidacionDocumento }
-   * 
-   */
-  public TipoOpcionValidacionDocumento getTipoValidacion() {
-    return tipoValidacion;
-  }
+    /**
+     * Gets the value of the tipoValidacion property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoOpcionValidacionDocumento }
+     *     
+     */
+    public TipoOpcionValidacionDocumento getTipoValidacion() {
+        return tipoValidacion;
+    }
 
-  /**
-   * Sets the value of the tipoValidacion property.
-   * 
-   * @param value allowed object is {@link TipoOpcionValidacionDocumento }
-   * 
-   */
-  public void setTipoValidacion(TipoOpcionValidacionDocumento value) {
-    this.tipoValidacion = value;
-  }
+    /**
+     * Sets the value of the tipoValidacion property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoOpcionValidacionDocumento }
+     *     
+     */
+    public void setTipoValidacion(TipoOpcionValidacionDocumento value) {
+        this.tipoValidacion = value;
+    }
 
-  /**
-   * Gets the value of the resultadoValidacion property.
-   * 
-   */
-  public boolean isResultadoValidacion() {
-    return resultadoValidacion;
-  }
+    /**
+     * Gets the value of the resultadoValidacion property.
+     * 
+     */
+    public boolean isResultadoValidacion() {
+        return resultadoValidacion;
+    }
 
-  /**
-   * Sets the value of the resultadoValidacion property.
-   * 
-   */
-  public void setResultadoValidacion(boolean value) {
-    this.resultadoValidacion = value;
-  }
+    /**
+     * Sets the value of the resultadoValidacion property.
+     * 
+     */
+    public void setResultadoValidacion(boolean value) {
+        this.resultadoValidacion = value;
+    }
 
-  /**
-   * Gets the value of the detalleValidacion property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getDetalleValidacion() {
-    return detalleValidacion;
-  }
+    /**
+     * Gets the value of the detalleValidacion property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDetalleValidacion() {
+        return detalleValidacion;
+    }
 
-  /**
-   * Sets the value of the detalleValidacion property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setDetalleValidacion(String value) {
-    this.detalleValidacion = value;
-  }
+    /**
+     * Sets the value of the detalleValidacion property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDetalleValidacion(String value) {
+        this.detalleValidacion = value;
+    }
 
 }

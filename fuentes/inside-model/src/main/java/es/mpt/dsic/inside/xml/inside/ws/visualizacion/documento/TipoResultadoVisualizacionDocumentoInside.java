@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoResultadoVisualizacionDocumentoInside complex type.
+ * <p>Java class for TipoResultadoVisualizacionDocumentoInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoResultadoVisualizacionDocumentoInside">
@@ -30,50 +28,61 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoResultadoVisualizacionDocumentoInside", propOrder = {"contenido", "mime"})
+@XmlType(name = "TipoResultadoVisualizacionDocumentoInside", propOrder = {
+    "contenido",
+    "mime"
+})
 public class TipoResultadoVisualizacionDocumentoInside {
 
-  @XmlElement(required = true)
-  protected byte[] contenido;
-  @XmlElement(required = true)
-  protected String mime;
+    @XmlElement(required = true)
+    protected byte[] contenido;
+    @XmlElement(required = true)
+    protected String mime;
 
-  /**
-   * Gets the value of the contenido property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getContenido() {
-    return contenido;
-  }
+    /**
+     * Gets the value of the contenido property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getContenido() {
+        return contenido;
+    }
 
-  /**
-   * Sets the value of the contenido property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setContenido(byte[] value) {
-    this.contenido = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the contenido property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setContenido(byte[] value) {
+        this.contenido = ((byte[]) value);
+    }
 
-  /**
-   * Gets the value of the mime property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getMime() {
-    return mime;
-  }
+    /**
+     * Gets the value of the mime property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMime() {
+        return mime;
+    }
 
-  /**
-   * Sets the value of the mime property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setMime(String value) {
-    this.mime = value;
-  }
+    /**
+     * Sets the value of the mime property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMime(String value) {
+        this.mime = value;
+    }
 
 }

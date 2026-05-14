@@ -13,11 +13,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>
- * Java class for SignatureValueType complex type.
+ * <p>Java class for SignatureValueType complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="SignatureValueType">
@@ -32,53 +30,63 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SignatureValueType", propOrder = {"value"})
+@XmlType(name = "SignatureValueType", propOrder = {
+    "value"
+})
 public class SignatureValueType {
 
-  @XmlValue
-  protected byte[] value;
-  @XmlAttribute(name = "Id")
-  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-  @XmlID
-  @XmlSchemaType(name = "ID")
-  protected String id;
+    @XmlValue
+    protected byte[] value;
+    @XmlAttribute(name = "Id")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlID
+    @XmlSchemaType(name = "ID")
+    protected String id;
 
-  /**
-   * Gets the value of the value property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getValue() {
-    return value;
-  }
+    /**
+     * Gets the value of the value property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getValue() {
+        return value;
+    }
 
-  /**
-   * Sets the value of the value property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setValue(byte[] value) {
-    this.value = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the value property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setValue(byte[] value) {
+        this.value = ((byte[]) value);
+    }
 
-  /**
-   * Gets the value of the id property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getId() {
-    return id;
-  }
+    /**
+     * Gets the value of the id property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getId() {
+        return id;
+    }
 
-  /**
-   * Sets the value of the id property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setId(String value) {
-    this.id = value;
-  }
+    /**
+     * Sets the value of the id property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setId(String value) {
+        this.id = value;
+    }
 
 }

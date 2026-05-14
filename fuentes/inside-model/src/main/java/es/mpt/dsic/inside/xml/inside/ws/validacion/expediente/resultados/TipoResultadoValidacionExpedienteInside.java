@@ -10,11 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoResultadoValidacionExpedienteInside complex type.
+ * <p>Java class for TipoResultadoValidacionExpedienteInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoResultadoValidacionExpedienteInside">
@@ -31,39 +29,41 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoResultadoValidacionExpedienteInside", propOrder = {"validacionDetalle"})
+@XmlType(name = "TipoResultadoValidacionExpedienteInside", propOrder = {
+    "validacionDetalle"
+})
 public class TipoResultadoValidacionExpedienteInside {
 
-  @XmlElement(required = true)
-  protected List<TipoResultadoValidacionDetalleExpedienteInside> validacionDetalle;
+    @XmlElement(required = true)
+    protected List<TipoResultadoValidacionDetalleExpedienteInside> validacionDetalle;
 
-  /**
-   * Gets the value of the validacionDetalle property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the validacionDetalle property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getValidacionDetalle().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list
-   * {@link TipoResultadoValidacionDetalleExpedienteInside }
-   * 
-   * 
-   */
-  public List<TipoResultadoValidacionDetalleExpedienteInside> getValidacionDetalle() {
-    if (validacionDetalle == null) {
-      validacionDetalle = new ArrayList<TipoResultadoValidacionDetalleExpedienteInside>();
+    /**
+     * Gets the value of the validacionDetalle property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the validacionDetalle property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getValidacionDetalle().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link TipoResultadoValidacionDetalleExpedienteInside }
+     * 
+     * 
+     */
+    public List<TipoResultadoValidacionDetalleExpedienteInside> getValidacionDetalle() {
+        if (validacionDetalle == null) {
+            validacionDetalle = new ArrayList<TipoResultadoValidacionDetalleExpedienteInside>();
+        }
+        return this.validacionDetalle;
     }
-    return this.validacionDetalle;
-  }
 
 }

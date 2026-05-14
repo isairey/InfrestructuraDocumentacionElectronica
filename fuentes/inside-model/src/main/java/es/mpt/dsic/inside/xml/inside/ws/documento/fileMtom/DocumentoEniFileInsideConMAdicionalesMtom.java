@@ -12,11 +12,9 @@ import es.mpt.dsic.inside.xml.inside.TipoMetadatosAdicionales;
 
 
 /**
- * <p>
- * Java class for DocumentoEniFileInsideConMAdicionalesMtom complex type.
+ * <p>Java class for DocumentoEniFileInsideConMAdicionalesMtom complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="DocumentoEniFileInsideConMAdicionalesMtom">
@@ -35,76 +33,90 @@ import es.mpt.dsic.inside.xml.inside.TipoMetadatosAdicionales;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DocumentoEniFileInsideConMAdicionalesMtom",
-    propOrder = {"documentoMtom", "metadatosAdicionales", "documentoEniBytes"})
+@XmlType(name = "DocumentoEniFileInsideConMAdicionalesMtom", propOrder = {
+    "documentoMtom",
+    "metadatosAdicionales",
+    "documentoEniBytes"
+})
 public class DocumentoEniFileInsideConMAdicionalesMtom {
 
-  @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/documento-e/mtom",
-      required = true)
-  protected TipoDocumentoMtom documentoMtom;
-  protected TipoMetadatosAdicionales metadatosAdicionales;
-  @XmlElement(required = true)
-  @XmlMimeType("application/octet-stream")
-  protected DataHandler documentoEniBytes;
+    @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/documento-e/mtom", required = true)
+    protected TipoDocumentoMtom documentoMtom;
+    protected TipoMetadatosAdicionales metadatosAdicionales;
+    @XmlElement(required = true)
+    @XmlMimeType("application/octet-stream")
+    protected DataHandler documentoEniBytes;
 
-  /**
-   * Gets the value of the documentoMtom property.
-   * 
-   * @return possible object is {@link TipoDocumentoMtom }
-   * 
-   */
-  public TipoDocumentoMtom getDocumentoMtom() {
-    return documentoMtom;
-  }
+    /**
+     * Gets the value of the documentoMtom property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoDocumentoMtom }
+     *     
+     */
+    public TipoDocumentoMtom getDocumentoMtom() {
+        return documentoMtom;
+    }
 
-  /**
-   * Sets the value of the documentoMtom property.
-   * 
-   * @param value allowed object is {@link TipoDocumentoMtom }
-   * 
-   */
-  public void setDocumentoMtom(TipoDocumentoMtom value) {
-    this.documentoMtom = value;
-  }
+    /**
+     * Sets the value of the documentoMtom property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoDocumentoMtom }
+     *     
+     */
+    public void setDocumentoMtom(TipoDocumentoMtom value) {
+        this.documentoMtom = value;
+    }
 
-  /**
-   * Gets the value of the metadatosAdicionales property.
-   * 
-   * @return possible object is {@link TipoMetadatosAdicionales }
-   * 
-   */
-  public TipoMetadatosAdicionales getMetadatosAdicionales() {
-    return metadatosAdicionales;
-  }
+    /**
+     * Gets the value of the metadatosAdicionales property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoMetadatosAdicionales }
+     *     
+     */
+    public TipoMetadatosAdicionales getMetadatosAdicionales() {
+        return metadatosAdicionales;
+    }
 
-  /**
-   * Sets the value of the metadatosAdicionales property.
-   * 
-   * @param value allowed object is {@link TipoMetadatosAdicionales }
-   * 
-   */
-  public void setMetadatosAdicionales(TipoMetadatosAdicionales value) {
-    this.metadatosAdicionales = value;
-  }
+    /**
+     * Sets the value of the metadatosAdicionales property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoMetadatosAdicionales }
+     *     
+     */
+    public void setMetadatosAdicionales(TipoMetadatosAdicionales value) {
+        this.metadatosAdicionales = value;
+    }
 
-  /**
-   * Gets the value of the documentoEniBytes property.
-   * 
-   * @return possible object is {@link DataHandler }
-   * 
-   */
-  public DataHandler getDocumentoEniBytes() {
-    return documentoEniBytes;
-  }
+    /**
+     * Gets the value of the documentoEniBytes property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DataHandler }
+     *     
+     */
+    public DataHandler getDocumentoEniBytes() {
+        return documentoEniBytes;
+    }
 
-  /**
-   * Sets the value of the documentoEniBytes property.
-   * 
-   * @param value allowed object is {@link DataHandler }
-   * 
-   */
-  public void setDocumentoEniBytes(DataHandler value) {
-    this.documentoEniBytes = value;
-  }
+    /**
+     * Sets the value of the documentoEniBytes property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DataHandler }
+     *     
+     */
+    public void setDocumentoEniBytes(DataHandler value) {
+        this.documentoEniBytes = value;
+    }
 
 }

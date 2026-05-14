@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for UsuarioAdminMensajes complex type.
+ * <p>Java class for UsuarioAdminMensajes complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="UsuarioAdminMensajes">
@@ -30,47 +28,54 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "UsuarioAdminMensajes", propOrder = {"nif", "adminMensajes"})
+@XmlType(name = "UsuarioAdminMensajes", propOrder = {
+    "nif",
+    "adminMensajes"
+})
 public class UsuarioAdminMensajes {
 
-  @XmlElement(required = true)
-  protected String nif;
-  protected boolean adminMensajes;
+    @XmlElement(required = true)
+    protected String nif;
+    protected boolean adminMensajes;
 
-  /**
-   * Gets the value of the nif property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getNif() {
-    return nif;
-  }
+    /**
+     * Gets the value of the nif property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getNif() {
+        return nif;
+    }
 
-  /**
-   * Sets the value of the nif property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setNif(String value) {
-    this.nif = value;
-  }
+    /**
+     * Sets the value of the nif property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNif(String value) {
+        this.nif = value;
+    }
 
-  /**
-   * Gets the value of the adminMensajes property.
-   * 
-   */
-  public boolean isAdminMensajes() {
-    return adminMensajes;
-  }
+    /**
+     * Gets the value of the adminMensajes property.
+     * 
+     */
+    public boolean isAdminMensajes() {
+        return adminMensajes;
+    }
 
-  /**
-   * Sets the value of the adminMensajes property.
-   * 
-   */
-  public void setAdminMensajes(boolean value) {
-    this.adminMensajes = value;
-  }
+    /**
+     * Sets the value of the adminMensajes property.
+     * 
+     */
+    public void setAdminMensajes(boolean value) {
+        this.adminMensajes = value;
+    }
 
 }

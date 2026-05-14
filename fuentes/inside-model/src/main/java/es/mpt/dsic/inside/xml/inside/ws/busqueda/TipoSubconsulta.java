@@ -6,13 +6,10 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for tipoSubconsulta.
+ * <p>Java class for tipoSubconsulta.
  * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
  * <pre>
  * &lt;simpleType name="tipoSubconsulta">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -27,14 +24,15 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum TipoSubconsulta {
 
-  OR, AND;
+    OR,
+    AND;
 
-  public String value() {
-    return name();
-  }
+    public String value() {
+        return name();
+    }
 
-  public static TipoSubconsulta fromValue(String v) {
-    return valueOf(v);
-  }
+    public static TipoSubconsulta fromValue(String v) {
+        return valueOf(v);
+    }
 
 }

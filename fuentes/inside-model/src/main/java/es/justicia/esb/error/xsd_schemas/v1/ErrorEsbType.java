@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for ErrorEsbType complex type.
+ * <p>Java class for ErrorEsbType complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ErrorEsbType">
@@ -38,115 +36,135 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ErrorEsbType {
 
-  @XmlElement(name = "Codigo", required = true)
-  protected String codigo;
-  @XmlElement(name = "Descripcion", required = true)
-  protected String descripcion;
-  @XmlElement(name = "Causa")
-  protected String causa;
-  @XmlElement(name = "Accion")
-  protected String accion;
-  @XmlElement(name = "TipoError", required = true)
-  protected String tipoError;
+    @XmlElement(name = "Codigo", required = true)
+    protected String codigo;
+    @XmlElement(name = "Descripcion", required = true)
+    protected String descripcion;
+    @XmlElement(name = "Causa")
+    protected String causa;
+    @XmlElement(name = "Accion")
+    protected String accion;
+    @XmlElement(name = "TipoError", required = true)
+    protected String tipoError;
 
-  /**
-   * Gets the value of the codigo property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getCodigo() {
-    return codigo;
-  }
+    /**
+     * Gets the value of the codigo property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCodigo() {
+        return codigo;
+    }
 
-  /**
-   * Sets the value of the codigo property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setCodigo(String value) {
-    this.codigo = value;
-  }
+    /**
+     * Sets the value of the codigo property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCodigo(String value) {
+        this.codigo = value;
+    }
 
-  /**
-   * Gets the value of the descripcion property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getDescripcion() {
-    return descripcion;
-  }
+    /**
+     * Gets the value of the descripcion property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDescripcion() {
+        return descripcion;
+    }
 
-  /**
-   * Sets the value of the descripcion property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setDescripcion(String value) {
-    this.descripcion = value;
-  }
+    /**
+     * Sets the value of the descripcion property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDescripcion(String value) {
+        this.descripcion = value;
+    }
 
-  /**
-   * Gets the value of the causa property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getCausa() {
-    return causa;
-  }
+    /**
+     * Gets the value of the causa property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCausa() {
+        return causa;
+    }
 
-  /**
-   * Sets the value of the causa property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setCausa(String value) {
-    this.causa = value;
-  }
+    /**
+     * Sets the value of the causa property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCausa(String value) {
+        this.causa = value;
+    }
 
-  /**
-   * Gets the value of the accion property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getAccion() {
-    return accion;
-  }
+    /**
+     * Gets the value of the accion property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAccion() {
+        return accion;
+    }
 
-  /**
-   * Sets the value of the accion property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setAccion(String value) {
-    this.accion = value;
-  }
+    /**
+     * Sets the value of the accion property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAccion(String value) {
+        this.accion = value;
+    }
 
-  /**
-   * Gets the value of the tipoError property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getTipoError() {
-    return tipoError;
-  }
+    /**
+     * Gets the value of the tipoError property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getTipoError() {
+        return tipoError;
+    }
 
-  /**
-   * Sets the value of the tipoError property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setTipoError(String value) {
-    this.tipoError = value;
-  }
+    /**
+     * Sets the value of the tipoError property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setTipoError(String value) {
+        this.tipoError = value;
+    }
 
 }

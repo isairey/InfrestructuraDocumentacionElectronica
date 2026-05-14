@@ -9,11 +9,9 @@ import es.mpt.dsic.inside.xml.eni.expediente.TipoExpediente;
 
 
 /**
- * <p>
- * Java class for TipoExpedienteInside complex type.
+ * <p>Java class for TipoExpedienteInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoExpedienteInside">
@@ -32,75 +30,90 @@ import es.mpt.dsic.inside.xml.eni.expediente.TipoExpediente;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoExpedienteInside",
-    propOrder = {"info", "expedienteENI", "metadatosAdicionales"})
+@XmlType(name = "TipoExpedienteInside", propOrder = {
+    "info",
+    "expedienteENI",
+    "metadatosAdicionales"
+})
 public class TipoExpedienteInside {
 
-  @XmlElement(required = true)
-  protected ExpedienteInsideInfo info;
-  @XmlElement(required = true)
-  protected TipoExpediente expedienteENI;
-  @XmlElement(required = true)
-  protected TipoMetadatosAdicionales metadatosAdicionales;
+    @XmlElement(required = true)
+    protected ExpedienteInsideInfo info;
+    @XmlElement(required = true)
+    protected TipoExpediente expedienteENI;
+    @XmlElement(required = true)
+    protected TipoMetadatosAdicionales metadatosAdicionales;
 
-  /**
-   * Gets the value of the info property.
-   * 
-   * @return possible object is {@link ExpedienteInsideInfo }
-   * 
-   */
-  public ExpedienteInsideInfo getInfo() {
-    return info;
-  }
+    /**
+     * Gets the value of the info property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ExpedienteInsideInfo }
+     *     
+     */
+    public ExpedienteInsideInfo getInfo() {
+        return info;
+    }
 
-  /**
-   * Sets the value of the info property.
-   * 
-   * @param value allowed object is {@link ExpedienteInsideInfo }
-   * 
-   */
-  public void setInfo(ExpedienteInsideInfo value) {
-    this.info = value;
-  }
+    /**
+     * Sets the value of the info property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ExpedienteInsideInfo }
+     *     
+     */
+    public void setInfo(ExpedienteInsideInfo value) {
+        this.info = value;
+    }
 
-  /**
-   * Gets the value of the expedienteENI property.
-   * 
-   * @return possible object is {@link TipoExpediente }
-   * 
-   */
-  public TipoExpediente getExpedienteENI() {
-    return expedienteENI;
-  }
+    /**
+     * Gets the value of the expedienteENI property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoExpediente }
+     *     
+     */
+    public TipoExpediente getExpedienteENI() {
+        return expedienteENI;
+    }
 
-  /**
-   * Sets the value of the expedienteENI property.
-   * 
-   * @param value allowed object is {@link TipoExpediente }
-   * 
-   */
-  public void setExpedienteENI(TipoExpediente value) {
-    this.expedienteENI = value;
-  }
+    /**
+     * Sets the value of the expedienteENI property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoExpediente }
+     *     
+     */
+    public void setExpedienteENI(TipoExpediente value) {
+        this.expedienteENI = value;
+    }
 
-  /**
-   * Gets the value of the metadatosAdicionales property.
-   * 
-   * @return possible object is {@link TipoMetadatosAdicionales }
-   * 
-   */
-  public TipoMetadatosAdicionales getMetadatosAdicionales() {
-    return metadatosAdicionales;
-  }
+    /**
+     * Gets the value of the metadatosAdicionales property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoMetadatosAdicionales }
+     *     
+     */
+    public TipoMetadatosAdicionales getMetadatosAdicionales() {
+        return metadatosAdicionales;
+    }
 
-  /**
-   * Sets the value of the metadatosAdicionales property.
-   * 
-   * @param value allowed object is {@link TipoMetadatosAdicionales }
-   * 
-   */
-  public void setMetadatosAdicionales(TipoMetadatosAdicionales value) {
-    this.metadatosAdicionales = value;
-  }
+    /**
+     * Sets the value of the metadatosAdicionales property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoMetadatosAdicionales }
+     *     
+     */
+    public void setMetadatosAdicionales(TipoMetadatosAdicionales value) {
+        this.metadatosAdicionales = value;
+    }
 
 }

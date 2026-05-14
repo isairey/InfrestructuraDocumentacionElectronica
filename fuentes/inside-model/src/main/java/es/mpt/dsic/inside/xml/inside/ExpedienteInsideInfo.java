@@ -13,11 +13,9 @@ import es.mpt.dsic.inside.xml.eni.expediente.metadatos.EnumeracionEstados;
 
 
 /**
- * <p>
- * Java class for ExpedienteInsideInfo complex type.
+ * <p>Java class for ExpedienteInsideInfo complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ExpedienteInsideInfo">
@@ -37,101 +35,120 @@ import es.mpt.dsic.inside.xml.eni.expediente.metadatos.EnumeracionEstados;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ExpedienteInsideInfo",
-    namespace = "https://ssweb.seap.minhap.es/Inside/XSD/v1.0/expediente-e/expedienteInfo",
-    propOrder = {"identificador", "estado", "versionActual", "infoExpediente"})
+@XmlType(name = "ExpedienteInsideInfo", namespace = "https://ssweb.seap.minhap.es/Inside/XSD/v1.0/expediente-e/expedienteInfo", propOrder = {
+    "identificador",
+    "estado",
+    "versionActual",
+    "infoExpediente"
+})
 public class ExpedienteInsideInfo {
 
-  @XmlElement(name = "Identificador", required = true)
-  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-  @XmlID
-  @XmlSchemaType(name = "ID")
-  protected String identificador;
-  @XmlElement(name = "Estado", required = true)
-  protected EnumeracionEstados estado;
-  @XmlElement(required = true)
-  protected TipoVersionInside versionActual;
-  @XmlElement(required = true)
-  protected String infoExpediente;
+    @XmlElement(name = "Identificador", required = true)
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlID
+    @XmlSchemaType(name = "ID")
+    protected String identificador;
+    @XmlElement(name = "Estado", required = true)
+    protected EnumeracionEstados estado;
+    @XmlElement(required = true)
+    protected TipoVersionInside versionActual;
+    @XmlElement(required = true)
+    protected String infoExpediente;
 
-  /**
-   * Gets the value of the identificador property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getIdentificador() {
-    return identificador;
-  }
+    /**
+     * Gets the value of the identificador property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdentificador() {
+        return identificador;
+    }
 
-  /**
-   * Sets the value of the identificador property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setIdentificador(String value) {
-    this.identificador = value;
-  }
+    /**
+     * Sets the value of the identificador property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdentificador(String value) {
+        this.identificador = value;
+    }
 
-  /**
-   * Gets the value of the estado property.
-   * 
-   * @return possible object is {@link EnumeracionEstados }
-   * 
-   */
-  public EnumeracionEstados getEstado() {
-    return estado;
-  }
+    /**
+     * Gets the value of the estado property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link EnumeracionEstados }
+     *     
+     */
+    public EnumeracionEstados getEstado() {
+        return estado;
+    }
 
-  /**
-   * Sets the value of the estado property.
-   * 
-   * @param value allowed object is {@link EnumeracionEstados }
-   * 
-   */
-  public void setEstado(EnumeracionEstados value) {
-    this.estado = value;
-  }
+    /**
+     * Sets the value of the estado property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link EnumeracionEstados }
+     *     
+     */
+    public void setEstado(EnumeracionEstados value) {
+        this.estado = value;
+    }
 
-  /**
-   * Gets the value of the versionActual property.
-   * 
-   * @return possible object is {@link TipoVersionInside }
-   * 
-   */
-  public TipoVersionInside getVersionActual() {
-    return versionActual;
-  }
+    /**
+     * Gets the value of the versionActual property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoVersionInside }
+     *     
+     */
+    public TipoVersionInside getVersionActual() {
+        return versionActual;
+    }
 
-  /**
-   * Sets the value of the versionActual property.
-   * 
-   * @param value allowed object is {@link TipoVersionInside }
-   * 
-   */
-  public void setVersionActual(TipoVersionInside value) {
-    this.versionActual = value;
-  }
+    /**
+     * Sets the value of the versionActual property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoVersionInside }
+     *     
+     */
+    public void setVersionActual(TipoVersionInside value) {
+        this.versionActual = value;
+    }
 
-  /**
-   * Gets the value of the infoExpediente property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getInfoExpediente() {
-    return infoExpediente;
-  }
+    /**
+     * Gets the value of the infoExpediente property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getInfoExpediente() {
+        return infoExpediente;
+    }
 
-  /**
-   * Sets the value of the infoExpediente property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setInfoExpediente(String value) {
-    this.infoExpediente = value;
-  }
+    /**
+     * Sets the value of the infoExpediente property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setInfoExpediente(String value) {
+        this.infoExpediente = value;
+    }
 
 }

@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoDocumentoEniFileInside complex type.
+ * <p>Java class for TipoDocumentoEniFileInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoDocumentoEniFileInside">
@@ -29,30 +27,34 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoDocumentoEniFileInside",
-    namespace = "https://ssweb.seap.minhap.es/Inside/XSD/v1.0/documento-e/documentoEniFile",
-    propOrder = {"documentoEniBytes"})
+@XmlType(name = "TipoDocumentoEniFileInside", namespace = "https://ssweb.seap.minhap.es/Inside/XSD/v1.0/documento-e/documentoEniFile", propOrder = {
+    "documentoEniBytes"
+})
 public class TipoDocumentoEniFileInside {
 
-  @XmlElement(required = true)
-  protected byte[] documentoEniBytes;
+    @XmlElement(required = true)
+    protected byte[] documentoEniBytes;
 
-  /**
-   * Gets the value of the documentoEniBytes property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getDocumentoEniBytes() {
-    return documentoEniBytes;
-  }
+    /**
+     * Gets the value of the documentoEniBytes property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getDocumentoEniBytes() {
+        return documentoEniBytes;
+    }
 
-  /**
-   * Sets the value of the documentoEniBytes property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setDocumentoEniBytes(byte[] value) {
-    this.documentoEniBytes = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the documentoEniBytes property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setDocumentoEniBytes(byte[] value) {
+        this.documentoEniBytes = ((byte[]) value);
+    }
 
 }

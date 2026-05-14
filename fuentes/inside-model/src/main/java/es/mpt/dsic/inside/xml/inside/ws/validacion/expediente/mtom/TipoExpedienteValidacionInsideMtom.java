@@ -10,11 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoExpedienteValidacionInsideMtom complex type.
+ * <p>Java class for TipoExpedienteValidacionInsideMtom complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoExpedienteValidacionInsideMtom">
@@ -32,54 +30,64 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoExpedienteValidacionInsideMtom",
-    propOrder = {"contenido", "opcionesValidacionExpediente"})
+@XmlType(name = "TipoExpedienteValidacionInsideMtom", propOrder = {
+    "contenido",
+    "opcionesValidacionExpediente"
+})
 public class TipoExpedienteValidacionInsideMtom {
 
-  @XmlElement(required = true)
-  @XmlMimeType("application/octet-stream")
-  protected DataHandler contenido;
-  @XmlElement(required = true)
-  protected TipoOpcionesValidacionExpedienteInsideMtom opcionesValidacionExpediente;
+    @XmlElement(required = true)
+    @XmlMimeType("application/octet-stream")
+    protected DataHandler contenido;
+    @XmlElement(required = true)
+    protected TipoOpcionesValidacionExpedienteInsideMtom opcionesValidacionExpediente;
 
-  /**
-   * Gets the value of the contenido property.
-   * 
-   * @return possible object is {@link DataHandler }
-   * 
-   */
-  public DataHandler getContenido() {
-    return contenido;
-  }
+    /**
+     * Gets the value of the contenido property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DataHandler }
+     *     
+     */
+    public DataHandler getContenido() {
+        return contenido;
+    }
 
-  /**
-   * Sets the value of the contenido property.
-   * 
-   * @param value allowed object is {@link DataHandler }
-   * 
-   */
-  public void setContenido(DataHandler value) {
-    this.contenido = value;
-  }
+    /**
+     * Sets the value of the contenido property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DataHandler }
+     *     
+     */
+    public void setContenido(DataHandler value) {
+        this.contenido = value;
+    }
 
-  /**
-   * Gets the value of the opcionesValidacionExpediente property.
-   * 
-   * @return possible object is {@link TipoOpcionesValidacionExpedienteInsideMtom }
-   * 
-   */
-  public TipoOpcionesValidacionExpedienteInsideMtom getOpcionesValidacionExpediente() {
-    return opcionesValidacionExpediente;
-  }
+    /**
+     * Gets the value of the opcionesValidacionExpediente property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoOpcionesValidacionExpedienteInsideMtom }
+     *     
+     */
+    public TipoOpcionesValidacionExpedienteInsideMtom getOpcionesValidacionExpediente() {
+        return opcionesValidacionExpediente;
+    }
 
-  /**
-   * Sets the value of the opcionesValidacionExpediente property.
-   * 
-   * @param value allowed object is {@link TipoOpcionesValidacionExpedienteInsideMtom }
-   * 
-   */
-  public void setOpcionesValidacionExpediente(TipoOpcionesValidacionExpedienteInsideMtom value) {
-    this.opcionesValidacionExpediente = value;
-  }
+    /**
+     * Sets the value of the opcionesValidacionExpediente property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoOpcionesValidacionExpedienteInsideMtom }
+     *     
+     */
+    public void setOpcionesValidacionExpediente(TipoOpcionesValidacionExpedienteInsideMtom value) {
+        this.opcionesValidacionExpediente = value;
+    }
 
 }

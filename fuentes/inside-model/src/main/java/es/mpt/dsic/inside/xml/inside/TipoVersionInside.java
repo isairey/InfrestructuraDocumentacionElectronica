@@ -10,11 +10,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>
- * Java class for TipoVersionInside complex type.
+ * <p>Java class for TipoVersionInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoVersionInside">
@@ -32,50 +30,55 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoVersionInside",
-    namespace = "https://ssweb.seap.minhap.es/Inside/XSD/v1.0/version",
-    propOrder = {"version", "fechaVersion"})
+@XmlType(name = "TipoVersionInside", namespace = "https://ssweb.seap.minhap.es/Inside/XSD/v1.0/version", propOrder = {
+    "version",
+    "fechaVersion"
+})
 public class TipoVersionInside {
 
-  protected int version;
-  @XmlElement(required = true)
-  @XmlSchemaType(name = "dateTime")
-  protected XMLGregorianCalendar fechaVersion;
+    protected int version;
+    @XmlElement(required = true)
+    @XmlSchemaType(name = "dateTime")
+    protected XMLGregorianCalendar fechaVersion;
 
-  /**
-   * Gets the value of the version property.
-   * 
-   */
-  public int getVersion() {
-    return version;
-  }
+    /**
+     * Gets the value of the version property.
+     * 
+     */
+    public int getVersion() {
+        return version;
+    }
 
-  /**
-   * Sets the value of the version property.
-   * 
-   */
-  public void setVersion(int value) {
-    this.version = value;
-  }
+    /**
+     * Sets the value of the version property.
+     * 
+     */
+    public void setVersion(int value) {
+        this.version = value;
+    }
 
-  /**
-   * Gets the value of the fechaVersion property.
-   * 
-   * @return possible object is {@link XMLGregorianCalendar }
-   * 
-   */
-  public XMLGregorianCalendar getFechaVersion() {
-    return fechaVersion;
-  }
+    /**
+     * Gets the value of the fechaVersion property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public XMLGregorianCalendar getFechaVersion() {
+        return fechaVersion;
+    }
 
-  /**
-   * Sets the value of the fechaVersion property.
-   * 
-   * @param value allowed object is {@link XMLGregorianCalendar }
-   * 
-   */
-  public void setFechaVersion(XMLGregorianCalendar value) {
-    this.fechaVersion = value;
-  }
+    /**
+     * Sets the value of the fechaVersion property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public void setFechaVersion(XMLGregorianCalendar value) {
+        this.fechaVersion = value;
+    }
 
 }

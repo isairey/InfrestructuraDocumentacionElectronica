@@ -7,13 +7,10 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoOpcionValidacionExpediente.
+ * <p>Java class for TipoOpcionValidacionExpediente.
  * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
- * The following schema fragment specifies the expected content contained within this class.
- * <p>
- * 
  * <pre>
  * &lt;simpleType name="TipoOpcionValidacionExpediente">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -30,28 +27,31 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum TipoOpcionValidacionExpediente {
 
-  @XmlEnumValue("TOVE01")
-  TOVE_01("TOVE01"), @XmlEnumValue("TOVE02")
-  TOVE_02("TOVE02"), @XmlEnumValue("TOVE03")
-  TOVE_03("TOVE03"), @XmlEnumValue("TOVE04")
-  TOVE_04("TOVE04");
-  private final String value;
+    @XmlEnumValue("TOVE01")
+    TOVE_01("TOVE01"),
+    @XmlEnumValue("TOVE02")
+    TOVE_02("TOVE02"),
+    @XmlEnumValue("TOVE03")
+    TOVE_03("TOVE03"),
+    @XmlEnumValue("TOVE04")
+    TOVE_04("TOVE04");
+    private final String value;
 
-  TipoOpcionValidacionExpediente(String v) {
-    value = v;
-  }
-
-  public String value() {
-    return value;
-  }
-
-  public static TipoOpcionValidacionExpediente fromValue(String v) {
-    for (TipoOpcionValidacionExpediente c : TipoOpcionValidacionExpediente.values()) {
-      if (c.value.equals(v)) {
-        return c;
-      }
+    TipoOpcionValidacionExpediente(String v) {
+        value = v;
     }
-    throw new IllegalArgumentException(v);
-  }
+
+    public String value() {
+        return value;
+    }
+
+    public static TipoOpcionValidacionExpediente fromValue(String v) {
+        for (TipoOpcionValidacionExpediente c: TipoOpcionValidacionExpediente.values()) {
+            if (c.value.equals(v)) {
+                return c;
+            }
+        }
+        throw new IllegalArgumentException(v);
+    }
 
 }

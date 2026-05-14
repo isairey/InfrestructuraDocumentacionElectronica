@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for NumeroProcedimiento complex type.
+ * <p>Java class for NumeroProcedimiento complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="NumeroProcedimiento">
@@ -29,30 +27,36 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "NumeroProcedimiento", propOrder = {"numeroProcedimiento"})
+@XmlType(name = "NumeroProcedimiento", propOrder = {
+    "numeroProcedimiento"
+})
 public class NumeroProcedimiento {
 
-  @XmlElement(required = true)
-  protected String numeroProcedimiento;
+    @XmlElement(required = true)
+    protected String numeroProcedimiento;
 
-  /**
-   * Gets the value of the numeroProcedimiento property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getNumeroProcedimiento() {
-    return numeroProcedimiento;
-  }
+    /**
+     * Gets the value of the numeroProcedimiento property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getNumeroProcedimiento() {
+        return numeroProcedimiento;
+    }
 
-  /**
-   * Sets the value of the numeroProcedimiento property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setNumeroProcedimiento(String value) {
-    this.numeroProcedimiento = value;
-  }
+    /**
+     * Sets the value of the numeroProcedimiento property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNumeroProcedimiento(String value) {
+        this.numeroProcedimiento = value;
+    }
 
 }

@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for RespuestaEnvioJusticia complex type.
+ * <p>Java class for RespuestaEnvioJusticia complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="RespuestaEnvioJusticia">
@@ -36,186 +34,225 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RespuestaEnvioJusticia",
-    propOrder = {"auditoriaEsbAplicacion", "auditoriaEsbModulo", "auditoriaEsbServicio",
-        "auditoriaEsbMarcaTiempo", "ack", "codigoEnvio", "codigoUnidadOrganoRemitente", "mensaje"})
+@XmlType(name = "RespuestaEnvioJusticia", propOrder = {
+    "auditoriaEsbAplicacion",
+    "auditoriaEsbModulo",
+    "auditoriaEsbServicio",
+    "auditoriaEsbMarcaTiempo",
+    "ack",
+    "codigoEnvio",
+    "codigoUnidadOrganoRemitente",
+    "mensaje"
+})
 public class RespuestaEnvioJusticia {
 
-  @XmlElement(name = "AuditoriaEsbAplicacion", required = true)
-  protected String auditoriaEsbAplicacion;
-  @XmlElement(name = "AuditoriaEsbModulo", required = true)
-  protected String auditoriaEsbModulo;
-  @XmlElement(name = "AuditoriaEsbServicio", required = true)
-  protected String auditoriaEsbServicio;
-  @XmlElement(name = "AuditoriaEsbMarcaTiempo", required = true)
-  protected String auditoriaEsbMarcaTiempo;
-  @XmlElement(required = true)
-  protected String ack;
-  @XmlElement(required = true)
-  protected String codigoEnvio;
-  @XmlElement(required = true)
-  protected String codigoUnidadOrganoRemitente;
-  @XmlElement(required = true)
-  protected String mensaje;
+    @XmlElement(name = "AuditoriaEsbAplicacion", required = true)
+    protected String auditoriaEsbAplicacion;
+    @XmlElement(name = "AuditoriaEsbModulo", required = true)
+    protected String auditoriaEsbModulo;
+    @XmlElement(name = "AuditoriaEsbServicio", required = true)
+    protected String auditoriaEsbServicio;
+    @XmlElement(name = "AuditoriaEsbMarcaTiempo", required = true)
+    protected String auditoriaEsbMarcaTiempo;
+    @XmlElement(required = true)
+    protected String ack;
+    @XmlElement(required = true)
+    protected String codigoEnvio;
+    @XmlElement(required = true)
+    protected String codigoUnidadOrganoRemitente;
+    @XmlElement(required = true)
+    protected String mensaje;
 
-  /**
-   * Gets the value of the auditoriaEsbAplicacion property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getAuditoriaEsbAplicacion() {
-    return auditoriaEsbAplicacion;
-  }
+    /**
+     * Gets the value of the auditoriaEsbAplicacion property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAuditoriaEsbAplicacion() {
+        return auditoriaEsbAplicacion;
+    }
 
-  /**
-   * Sets the value of the auditoriaEsbAplicacion property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setAuditoriaEsbAplicacion(String value) {
-    this.auditoriaEsbAplicacion = value;
-  }
+    /**
+     * Sets the value of the auditoriaEsbAplicacion property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAuditoriaEsbAplicacion(String value) {
+        this.auditoriaEsbAplicacion = value;
+    }
 
-  /**
-   * Gets the value of the auditoriaEsbModulo property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getAuditoriaEsbModulo() {
-    return auditoriaEsbModulo;
-  }
+    /**
+     * Gets the value of the auditoriaEsbModulo property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAuditoriaEsbModulo() {
+        return auditoriaEsbModulo;
+    }
 
-  /**
-   * Sets the value of the auditoriaEsbModulo property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setAuditoriaEsbModulo(String value) {
-    this.auditoriaEsbModulo = value;
-  }
+    /**
+     * Sets the value of the auditoriaEsbModulo property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAuditoriaEsbModulo(String value) {
+        this.auditoriaEsbModulo = value;
+    }
 
-  /**
-   * Gets the value of the auditoriaEsbServicio property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getAuditoriaEsbServicio() {
-    return auditoriaEsbServicio;
-  }
+    /**
+     * Gets the value of the auditoriaEsbServicio property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAuditoriaEsbServicio() {
+        return auditoriaEsbServicio;
+    }
 
-  /**
-   * Sets the value of the auditoriaEsbServicio property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setAuditoriaEsbServicio(String value) {
-    this.auditoriaEsbServicio = value;
-  }
+    /**
+     * Sets the value of the auditoriaEsbServicio property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAuditoriaEsbServicio(String value) {
+        this.auditoriaEsbServicio = value;
+    }
 
-  /**
-   * Gets the value of the auditoriaEsbMarcaTiempo property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getAuditoriaEsbMarcaTiempo() {
-    return auditoriaEsbMarcaTiempo;
-  }
+    /**
+     * Gets the value of the auditoriaEsbMarcaTiempo property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAuditoriaEsbMarcaTiempo() {
+        return auditoriaEsbMarcaTiempo;
+    }
 
-  /**
-   * Sets the value of the auditoriaEsbMarcaTiempo property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setAuditoriaEsbMarcaTiempo(String value) {
-    this.auditoriaEsbMarcaTiempo = value;
-  }
+    /**
+     * Sets the value of the auditoriaEsbMarcaTiempo property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAuditoriaEsbMarcaTiempo(String value) {
+        this.auditoriaEsbMarcaTiempo = value;
+    }
 
-  /**
-   * Gets the value of the ack property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getAck() {
-    return ack;
-  }
+    /**
+     * Gets the value of the ack property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAck() {
+        return ack;
+    }
 
-  /**
-   * Sets the value of the ack property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setAck(String value) {
-    this.ack = value;
-  }
+    /**
+     * Sets the value of the ack property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAck(String value) {
+        this.ack = value;
+    }
 
-  /**
-   * Gets the value of the codigoEnvio property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getCodigoEnvio() {
-    return codigoEnvio;
-  }
+    /**
+     * Gets the value of the codigoEnvio property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCodigoEnvio() {
+        return codigoEnvio;
+    }
 
-  /**
-   * Sets the value of the codigoEnvio property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setCodigoEnvio(String value) {
-    this.codigoEnvio = value;
-  }
+    /**
+     * Sets the value of the codigoEnvio property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCodigoEnvio(String value) {
+        this.codigoEnvio = value;
+    }
 
-  /**
-   * Gets the value of the codigoUnidadOrganoRemitente property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getCodigoUnidadOrganoRemitente() {
-    return codigoUnidadOrganoRemitente;
-  }
+    /**
+     * Gets the value of the codigoUnidadOrganoRemitente property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCodigoUnidadOrganoRemitente() {
+        return codigoUnidadOrganoRemitente;
+    }
 
-  /**
-   * Sets the value of the codigoUnidadOrganoRemitente property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setCodigoUnidadOrganoRemitente(String value) {
-    this.codigoUnidadOrganoRemitente = value;
-  }
+    /**
+     * Sets the value of the codigoUnidadOrganoRemitente property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCodigoUnidadOrganoRemitente(String value) {
+        this.codigoUnidadOrganoRemitente = value;
+    }
 
-  /**
-   * Gets the value of the mensaje property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getMensaje() {
-    return mensaje;
-  }
+    /**
+     * Gets the value of the mensaje property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMensaje() {
+        return mensaje;
+    }
 
-  /**
-   * Sets the value of the mensaje property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setMensaje(String value) {
-    this.mensaje = value;
-  }
+    /**
+     * Sets the value of the mensaje property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMensaje(String value) {
+        this.mensaje = value;
+    }
 
 }

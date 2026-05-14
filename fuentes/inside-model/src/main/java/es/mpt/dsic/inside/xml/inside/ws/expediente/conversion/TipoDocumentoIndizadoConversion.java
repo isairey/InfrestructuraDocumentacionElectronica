@@ -10,11 +10,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>
- * Java class for TipoDocumentoIndizadoConversion complex type.
+ * <p>Java class for TipoDocumentoIndizadoConversion complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoDocumentoIndizadoConversion">
@@ -35,120 +33,145 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoDocumentoIndizadoConversion", propOrder = {"identificadorDocumento",
-    "valorHuella", "funcionResumen", "fechaIncorporacionExpediente", "ordenDocumentoExpediente"})
+@XmlType(name = "TipoDocumentoIndizadoConversion", propOrder = {
+    "identificadorDocumento",
+    "valorHuella",
+    "funcionResumen",
+    "fechaIncorporacionExpediente",
+    "ordenDocumentoExpediente"
+})
 public class TipoDocumentoIndizadoConversion {
 
-  @XmlElement(name = "IdentificadorDocumento", required = true)
-  protected String identificadorDocumento;
-  @XmlElement(name = "ValorHuella", required = true)
-  protected String valorHuella;
-  @XmlElement(name = "FuncionResumen", required = true)
-  protected String funcionResumen;
-  @XmlElement(name = "FechaIncorporacionExpediente")
-  @XmlSchemaType(name = "dateTime")
-  protected XMLGregorianCalendar fechaIncorporacionExpediente;
-  @XmlElement(name = "OrdenDocumentoExpediente")
-  protected String ordenDocumentoExpediente;
+    @XmlElement(name = "IdentificadorDocumento", required = true)
+    protected String identificadorDocumento;
+    @XmlElement(name = "ValorHuella", required = true)
+    protected String valorHuella;
+    @XmlElement(name = "FuncionResumen", required = true)
+    protected String funcionResumen;
+    @XmlElement(name = "FechaIncorporacionExpediente")
+    @XmlSchemaType(name = "dateTime")
+    protected XMLGregorianCalendar fechaIncorporacionExpediente;
+    @XmlElement(name = "OrdenDocumentoExpediente")
+    protected String ordenDocumentoExpediente;
 
-  /**
-   * Gets the value of the identificadorDocumento property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getIdentificadorDocumento() {
-    return identificadorDocumento;
-  }
+    /**
+     * Gets the value of the identificadorDocumento property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdentificadorDocumento() {
+        return identificadorDocumento;
+    }
 
-  /**
-   * Sets the value of the identificadorDocumento property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setIdentificadorDocumento(String value) {
-    this.identificadorDocumento = value;
-  }
+    /**
+     * Sets the value of the identificadorDocumento property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdentificadorDocumento(String value) {
+        this.identificadorDocumento = value;
+    }
 
-  /**
-   * Gets the value of the valorHuella property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getValorHuella() {
-    return valorHuella;
-  }
+    /**
+     * Gets the value of the valorHuella property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getValorHuella() {
+        return valorHuella;
+    }
 
-  /**
-   * Sets the value of the valorHuella property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setValorHuella(String value) {
-    this.valorHuella = value;
-  }
+    /**
+     * Sets the value of the valorHuella property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setValorHuella(String value) {
+        this.valorHuella = value;
+    }
 
-  /**
-   * Gets the value of the funcionResumen property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getFuncionResumen() {
-    return funcionResumen;
-  }
+    /**
+     * Gets the value of the funcionResumen property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getFuncionResumen() {
+        return funcionResumen;
+    }
 
-  /**
-   * Sets the value of the funcionResumen property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setFuncionResumen(String value) {
-    this.funcionResumen = value;
-  }
+    /**
+     * Sets the value of the funcionResumen property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setFuncionResumen(String value) {
+        this.funcionResumen = value;
+    }
 
-  /**
-   * Gets the value of the fechaIncorporacionExpediente property.
-   * 
-   * @return possible object is {@link XMLGregorianCalendar }
-   * 
-   */
-  public XMLGregorianCalendar getFechaIncorporacionExpediente() {
-    return fechaIncorporacionExpediente;
-  }
+    /**
+     * Gets the value of the fechaIncorporacionExpediente property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public XMLGregorianCalendar getFechaIncorporacionExpediente() {
+        return fechaIncorporacionExpediente;
+    }
 
-  /**
-   * Sets the value of the fechaIncorporacionExpediente property.
-   * 
-   * @param value allowed object is {@link XMLGregorianCalendar }
-   * 
-   */
-  public void setFechaIncorporacionExpediente(XMLGregorianCalendar value) {
-    this.fechaIncorporacionExpediente = value;
-  }
+    /**
+     * Sets the value of the fechaIncorporacionExpediente property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public void setFechaIncorporacionExpediente(XMLGregorianCalendar value) {
+        this.fechaIncorporacionExpediente = value;
+    }
 
-  /**
-   * Gets the value of the ordenDocumentoExpediente property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getOrdenDocumentoExpediente() {
-    return ordenDocumentoExpediente;
-  }
+    /**
+     * Gets the value of the ordenDocumentoExpediente property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getOrdenDocumentoExpediente() {
+        return ordenDocumentoExpediente;
+    }
 
-  /**
-   * Sets the value of the ordenDocumentoExpediente property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setOrdenDocumentoExpediente(String value) {
-    this.ordenDocumentoExpediente = value;
-  }
+    /**
+     * Sets the value of the ordenDocumentoExpediente property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setOrdenDocumentoExpediente(String value) {
+        this.ordenDocumentoExpediente = value;
+    }
 
 }

@@ -16,11 +16,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>
- * Java class for TipoCarpetaIndizada complex type.
+ * <p>Java class for TipoCarpetaIndizada complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoCarpetaIndizada">
@@ -43,90 +41,103 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoCarpetaIndizada",
-    propOrder = {"identificadorCarpeta", "documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada"})
+@XmlType(name = "TipoCarpetaIndizada", propOrder = {
+    "identificadorCarpeta",
+    "documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada"
+})
 public class TipoCarpetaIndizada {
 
-  @XmlElement(name = "IdentificadorCarpeta", required = true)
-  protected String identificadorCarpeta;
-  @XmlElements({@XmlElement(name = "ExpedienteIndizado", type = TipoIndiceContenido.class),
-      @XmlElement(name = "DocumentoIndizado", type = TipoDocumentoIndizado.class),
-      @XmlElement(name = "CarpetaIndizada", type = TipoCarpetaIndizada.class)})
-  protected List<Object> documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
-  @XmlAttribute(name = "Id")
-  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-  @XmlID
-  @XmlSchemaType(name = "ID")
-  protected String id;
+    @XmlElement(name = "IdentificadorCarpeta", required = true)
+    protected String identificadorCarpeta;
+    @XmlElements({
+        @XmlElement(name = "DocumentoIndizado", type = TipoDocumentoIndizado.class),
+        @XmlElement(name = "CarpetaIndizada", type = TipoCarpetaIndizada.class),
+        @XmlElement(name = "ExpedienteIndizado", type = TipoIndiceContenido.class)
+    })
+    protected List<Object> documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
+    @XmlAttribute(name = "Id")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlID
+    @XmlSchemaType(name = "ID")
+    protected String id;
 
-  /**
-   * Gets the value of the identificadorCarpeta property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getIdentificadorCarpeta() {
-    return identificadorCarpeta;
-  }
-
-  /**
-   * Sets the value of the identificadorCarpeta property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setIdentificadorCarpeta(String value) {
-    this.identificadorCarpeta = value;
-  }
-
-  /**
-   * Gets the value of the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the
-   * documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list {@link TipoIndiceContenido }
-   * {@link TipoDocumentoIndizado } {@link TipoCarpetaIndizada }
-   * 
-   * 
-   */
-  public List<Object> getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada() {
-    if (documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada == null) {
-      documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada = new ArrayList<Object>();
+    /**
+     * Gets the value of the identificadorCarpeta property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdentificadorCarpeta() {
+        return identificadorCarpeta;
     }
-    return this.documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
-  }
 
-  /**
-   * Gets the value of the id property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getId() {
-    return id;
-  }
+    /**
+     * Sets the value of the identificadorCarpeta property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdentificadorCarpeta(String value) {
+        this.identificadorCarpeta = value;
+    }
 
-  /**
-   * Sets the value of the id property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setId(String value) {
-    this.id = value;
-  }
+    /**
+     * Gets the value of the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link TipoDocumentoIndizado }
+     * {@link TipoCarpetaIndizada }
+     * {@link TipoIndiceContenido }
+     * 
+     * 
+     */
+    public List<Object> getDocumentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada() {
+        if (documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada == null) {
+            documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada = new ArrayList<Object>();
+        }
+        return this.documentoIndizadoOrExpedienteIndizadoOrCarpetaIndizada;
+    }
+
+    /**
+     * Gets the value of the id property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * Sets the value of the id property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setId(String value) {
+        this.id = value;
+    }
 
 }

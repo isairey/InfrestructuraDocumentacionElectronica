@@ -10,11 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TransformsType complex type.
+ * <p>Java class for TransformsType complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TransformsType">
@@ -31,38 +29,41 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TransformsType", propOrder = {"transform"})
+@XmlType(name = "TransformsType", propOrder = {
+    "transform"
+})
 public class TransformsType {
 
-  @XmlElement(name = "Transform", required = true)
-  protected List<TransformType> transform;
+    @XmlElement(name = "Transform", required = true)
+    protected List<TransformType> transform;
 
-  /**
-   * Gets the value of the transform property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the transform property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getTransform().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list {@link TransformType }
-   * 
-   * 
-   */
-  public List<TransformType> getTransform() {
-    if (transform == null) {
-      transform = new ArrayList<TransformType>();
+    /**
+     * Gets the value of the transform property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the transform property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getTransform().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link TransformType }
+     * 
+     * 
+     */
+    public List<TransformType> getTransform() {
+        if (transform == null) {
+            transform = new ArrayList<TransformType>();
+        }
+        return this.transform;
     }
-    return this.transform;
-  }
 
 }

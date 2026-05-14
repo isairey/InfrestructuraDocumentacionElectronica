@@ -11,11 +11,9 @@ import es.mpt.dsic.inside.xml.inside.ws.filter.FilterPageRequestResponse;
 
 
 /**
- * <p>
- * Java class for UsuarioResultadoBusqueda complex type.
+ * <p>Java class for UsuarioResultadoBusqueda complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="UsuarioResultadoBusqueda">
@@ -33,59 +31,67 @@ import es.mpt.dsic.inside.xml.inside.ws.filter.FilterPageRequestResponse;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "UsuarioResultadoBusqueda", propOrder = {"paginador", "resultados"})
+@XmlType(name = "UsuarioResultadoBusqueda", propOrder = {
+    "paginador",
+    "resultados"
+})
 public class UsuarioResultadoBusqueda {
 
-  @XmlElement(required = true)
-  protected FilterPageRequestResponse paginador;
-  protected List<Usuario> resultados;
+    @XmlElement(required = true)
+    protected FilterPageRequestResponse paginador;
+    protected List<Usuario> resultados;
 
-  /**
-   * Gets the value of the paginador property.
-   * 
-   * @return possible object is {@link FilterPageRequestResponse }
-   * 
-   */
-  public FilterPageRequestResponse getPaginador() {
-    return paginador;
-  }
-
-  /**
-   * Sets the value of the paginador property.
-   * 
-   * @param value allowed object is {@link FilterPageRequestResponse }
-   * 
-   */
-  public void setPaginador(FilterPageRequestResponse value) {
-    this.paginador = value;
-  }
-
-  /**
-   * Gets the value of the resultados property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot. Therefore any
-   * modification you make to the returned list will be present inside the JAXB object. This is why
-   * there is not a <CODE>set</CODE> method for the resultados property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getResultados().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list {@link Usuario }
-   * 
-   * 
-   */
-  public List<Usuario> getResultados() {
-    if (resultados == null) {
-      resultados = new ArrayList<Usuario>();
+    /**
+     * Gets the value of the paginador property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link FilterPageRequestResponse }
+     *     
+     */
+    public FilterPageRequestResponse getPaginador() {
+        return paginador;
     }
-    return this.resultados;
-  }
+
+    /**
+     * Sets the value of the paginador property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link FilterPageRequestResponse }
+     *     
+     */
+    public void setPaginador(FilterPageRequestResponse value) {
+        this.paginador = value;
+    }
+
+    /**
+     * Gets the value of the resultados property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the resultados property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getResultados().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Usuario }
+     * 
+     * 
+     */
+    public List<Usuario> getResultados() {
+        if (resultados == null) {
+            resultados = new ArrayList<Usuario>();
+        }
+        return this.resultados;
+    }
 
 }

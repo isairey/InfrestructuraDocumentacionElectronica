@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoEstadoElaboracion complex type.
+ * <p>Java class for TipoEstadoElaboracion complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoEstadoElaboracion">
@@ -30,53 +28,63 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoEstadoElaboracion",
-    propOrder = {"valorEstadoElaboracion", "identificadorDocumentoOrigen"})
+@XmlType(name = "TipoEstadoElaboracion", propOrder = {
+    "valorEstadoElaboracion",
+    "identificadorDocumentoOrigen"
+})
 public class TipoEstadoElaboracion {
 
-  @XmlElement(name = "ValorEstadoElaboracion", required = true)
-  protected EnumeracionEstadoElaboracion valorEstadoElaboracion;
-  @XmlElement(name = "IdentificadorDocumentoOrigen")
-  protected String identificadorDocumentoOrigen;
+    @XmlElement(name = "ValorEstadoElaboracion", required = true)
+    protected EnumeracionEstadoElaboracion valorEstadoElaboracion;
+    @XmlElement(name = "IdentificadorDocumentoOrigen")
+    protected String identificadorDocumentoOrigen;
 
-  /**
-   * Gets the value of the valorEstadoElaboracion property.
-   * 
-   * @return possible object is {@link EnumeracionEstadoElaboracion }
-   * 
-   */
-  public EnumeracionEstadoElaboracion getValorEstadoElaboracion() {
-    return valorEstadoElaboracion;
-  }
+    /**
+     * Gets the value of the valorEstadoElaboracion property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link EnumeracionEstadoElaboracion }
+     *     
+     */
+    public EnumeracionEstadoElaboracion getValorEstadoElaboracion() {
+        return valorEstadoElaboracion;
+    }
 
-  /**
-   * Sets the value of the valorEstadoElaboracion property.
-   * 
-   * @param value allowed object is {@link EnumeracionEstadoElaboracion }
-   * 
-   */
-  public void setValorEstadoElaboracion(EnumeracionEstadoElaboracion value) {
-    this.valorEstadoElaboracion = value;
-  }
+    /**
+     * Sets the value of the valorEstadoElaboracion property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link EnumeracionEstadoElaboracion }
+     *     
+     */
+    public void setValorEstadoElaboracion(EnumeracionEstadoElaboracion value) {
+        this.valorEstadoElaboracion = value;
+    }
 
-  /**
-   * Gets the value of the identificadorDocumentoOrigen property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getIdentificadorDocumentoOrigen() {
-    return identificadorDocumentoOrigen;
-  }
+    /**
+     * Gets the value of the identificadorDocumentoOrigen property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdentificadorDocumentoOrigen() {
+        return identificadorDocumentoOrigen;
+    }
 
-  /**
-   * Sets the value of the identificadorDocumentoOrigen property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setIdentificadorDocumentoOrigen(String value) {
-    this.identificadorDocumentoOrigen = value;
-  }
+    /**
+     * Sets the value of the identificadorDocumentoOrigen property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdentificadorDocumentoOrigen(String value) {
+        this.identificadorDocumentoOrigen = value;
+    }
 
 }

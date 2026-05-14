@@ -10,11 +10,9 @@ import es.mpt.dsic.inside.xml.inside.TipoMetadatosAdicionales;
 
 
 /**
- * <p>
- * Java class for TipoExpedienteInsideConMAdicionalesMtom complex type.
+ * <p>Java class for TipoExpedienteInsideConMAdicionalesMtom complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoExpedienteInsideConMAdicionalesMtom">
@@ -32,54 +30,62 @@ import es.mpt.dsic.inside.xml.inside.TipoMetadatosAdicionales;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoExpedienteInsideConMAdicionalesMtom",
-    namespace = "https://ssweb.seap.minhap.es/Inside/XSD/v1.0/expediente-e/mtom",
-    propOrder = {"expedienteMtom", "metadatosAdicionales"})
+@XmlType(name = "TipoExpedienteInsideConMAdicionalesMtom", namespace = "https://ssweb.seap.minhap.es/Inside/XSD/v1.0/expediente-e/mtom", propOrder = {
+    "expedienteMtom",
+    "metadatosAdicionales"
+})
 public class TipoExpedienteInsideConMAdicionalesMtom {
 
-  @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/expediente-e/mtom",
-      required = true)
-  protected TipoExpedienteMtom expedienteMtom;
-  protected TipoMetadatosAdicionales metadatosAdicionales;
+    @XmlElement(namespace = "http://administracionelectronica.gob.es/ENI/XSD/v1.0/expediente-e/mtom", required = true)
+    protected TipoExpedienteMtom expedienteMtom;
+    protected TipoMetadatosAdicionales metadatosAdicionales;
 
-  /**
-   * Gets the value of the expedienteMtom property.
-   * 
-   * @return possible object is {@link TipoExpedienteMtom }
-   * 
-   */
-  public TipoExpedienteMtom getExpedienteMtom() {
-    return expedienteMtom;
-  }
+    /**
+     * Gets the value of the expedienteMtom property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoExpedienteMtom }
+     *     
+     */
+    public TipoExpedienteMtom getExpedienteMtom() {
+        return expedienteMtom;
+    }
 
-  /**
-   * Sets the value of the expedienteMtom property.
-   * 
-   * @param value allowed object is {@link TipoExpedienteMtom }
-   * 
-   */
-  public void setExpedienteMtom(TipoExpedienteMtom value) {
-    this.expedienteMtom = value;
-  }
+    /**
+     * Sets the value of the expedienteMtom property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoExpedienteMtom }
+     *     
+     */
+    public void setExpedienteMtom(TipoExpedienteMtom value) {
+        this.expedienteMtom = value;
+    }
 
-  /**
-   * Gets the value of the metadatosAdicionales property.
-   * 
-   * @return possible object is {@link TipoMetadatosAdicionales }
-   * 
-   */
-  public TipoMetadatosAdicionales getMetadatosAdicionales() {
-    return metadatosAdicionales;
-  }
+    /**
+     * Gets the value of the metadatosAdicionales property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoMetadatosAdicionales }
+     *     
+     */
+    public TipoMetadatosAdicionales getMetadatosAdicionales() {
+        return metadatosAdicionales;
+    }
 
-  /**
-   * Sets the value of the metadatosAdicionales property.
-   * 
-   * @param value allowed object is {@link TipoMetadatosAdicionales }
-   * 
-   */
-  public void setMetadatosAdicionales(TipoMetadatosAdicionales value) {
-    this.metadatosAdicionales = value;
-  }
+    /**
+     * Sets the value of the metadatosAdicionales property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoMetadatosAdicionales }
+     *     
+     */
+    public void setMetadatosAdicionales(TipoMetadatosAdicionales value) {
+        this.metadatosAdicionales = value;
+    }
 
 }

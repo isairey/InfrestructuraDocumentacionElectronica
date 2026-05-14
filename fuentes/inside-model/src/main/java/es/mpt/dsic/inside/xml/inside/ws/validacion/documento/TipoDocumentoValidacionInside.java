@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoDocumentoValidacionInside complex type.
+ * <p>Java class for TipoDocumentoValidacionInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoDocumentoValidacionInside">
@@ -30,51 +28,61 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoDocumentoValidacionInside",
-    propOrder = {"contenido", "opcionesValidacionDocumento"})
+@XmlType(name = "TipoDocumentoValidacionInside", propOrder = {
+    "contenido",
+    "opcionesValidacionDocumento"
+})
 public class TipoDocumentoValidacionInside {
 
-  @XmlElement(required = true)
-  protected byte[] contenido;
-  @XmlElement(required = true)
-  protected TipoOpcionesValidacionDocumentoInside opcionesValidacionDocumento;
+    @XmlElement(required = true)
+    protected byte[] contenido;
+    @XmlElement(required = true)
+    protected TipoOpcionesValidacionDocumentoInside opcionesValidacionDocumento;
 
-  /**
-   * Gets the value of the contenido property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getContenido() {
-    return contenido;
-  }
+    /**
+     * Gets the value of the contenido property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getContenido() {
+        return contenido;
+    }
 
-  /**
-   * Sets the value of the contenido property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setContenido(byte[] value) {
-    this.contenido = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the contenido property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setContenido(byte[] value) {
+        this.contenido = ((byte[]) value);
+    }
 
-  /**
-   * Gets the value of the opcionesValidacionDocumento property.
-   * 
-   * @return possible object is {@link TipoOpcionesValidacionDocumentoInside }
-   * 
-   */
-  public TipoOpcionesValidacionDocumentoInside getOpcionesValidacionDocumento() {
-    return opcionesValidacionDocumento;
-  }
+    /**
+     * Gets the value of the opcionesValidacionDocumento property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoOpcionesValidacionDocumentoInside }
+     *     
+     */
+    public TipoOpcionesValidacionDocumentoInside getOpcionesValidacionDocumento() {
+        return opcionesValidacionDocumento;
+    }
 
-  /**
-   * Sets the value of the opcionesValidacionDocumento property.
-   * 
-   * @param value allowed object is {@link TipoOpcionesValidacionDocumentoInside }
-   * 
-   */
-  public void setOpcionesValidacionDocumento(TipoOpcionesValidacionDocumentoInside value) {
-    this.opcionesValidacionDocumento = value;
-  }
+    /**
+     * Sets the value of the opcionesValidacionDocumento property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoOpcionesValidacionDocumentoInside }
+     *     
+     */
+    public void setOpcionesValidacionDocumento(TipoOpcionesValidacionDocumentoInside value) {
+        this.opcionesValidacionDocumento = value;
+    }
 
 }

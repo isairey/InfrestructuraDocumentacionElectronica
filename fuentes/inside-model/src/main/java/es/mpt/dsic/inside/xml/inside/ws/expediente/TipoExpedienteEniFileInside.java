@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for TipoExpedienteEniFileInside complex type.
+ * <p>Java class for TipoExpedienteEniFileInside complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoExpedienteEniFileInside">
@@ -29,28 +27,34 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoExpedienteEniFileInside", propOrder = {"expedienteEniBytes"})
+@XmlType(name = "TipoExpedienteEniFileInside", propOrder = {
+    "expedienteEniBytes"
+})
 public class TipoExpedienteEniFileInside {
 
-  @XmlElement(required = true)
-  protected byte[] expedienteEniBytes;
+    @XmlElement(required = true)
+    protected byte[] expedienteEniBytes;
 
-  /**
-   * Gets the value of the expedienteEniBytes property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getExpedienteEniBytes() {
-    return expedienteEniBytes;
-  }
+    /**
+     * Gets the value of the expedienteEniBytes property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getExpedienteEniBytes() {
+        return expedienteEniBytes;
+    }
 
-  /**
-   * Sets the value of the expedienteEniBytes property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setExpedienteEniBytes(byte[] value) {
-    this.expedienteEniBytes = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the expedienteEniBytes property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setExpedienteEniBytes(byte[] value) {
+        this.expedienteEniBytes = ((byte[]) value);
+    }
 
 }

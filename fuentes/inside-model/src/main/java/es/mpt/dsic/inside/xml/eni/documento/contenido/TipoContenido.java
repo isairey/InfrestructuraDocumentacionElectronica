@@ -13,11 +13,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>
- * Java class for TipoContenido complex type.
+ * <p>Java class for TipoContenido complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="TipoContenido">
@@ -40,119 +38,143 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TipoContenido",
-    propOrder = {"datosXML", "valorBinario", "referenciaFichero", "nombreFormato"})
+@XmlType(name = "TipoContenido", propOrder = {
+    "datosXML",
+    "valorBinario",
+    "referenciaFichero",
+    "nombreFormato"
+})
 public class TipoContenido {
 
-  @XmlElement(name = "DatosXML")
-  protected Object datosXML;
-  @XmlElement(name = "ValorBinario")
-  protected byte[] valorBinario;
-  protected String referenciaFichero;
-  @XmlElement(name = "NombreFormato", required = true)
-  protected String nombreFormato;
-  @XmlAttribute(name = "Id")
-  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-  @XmlID
-  @XmlSchemaType(name = "ID")
-  protected String id;
+    @XmlElement(name = "DatosXML")
+    protected Object datosXML;
+    @XmlElement(name = "ValorBinario")
+    protected byte[] valorBinario;
+    protected String referenciaFichero;
+    @XmlElement(name = "NombreFormato", required = true)
+    protected String nombreFormato;
+    @XmlAttribute(name = "Id")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlID
+    @XmlSchemaType(name = "ID")
+    protected String id;
 
-  /**
-   * Gets the value of the datosXML property.
-   * 
-   * @return possible object is {@link Object }
-   * 
-   */
-  public Object getDatosXML() {
-    return datosXML;
-  }
+    /**
+     * Gets the value of the datosXML property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Object }
+     *     
+     */
+    public Object getDatosXML() {
+        return datosXML;
+    }
 
-  /**
-   * Sets the value of the datosXML property.
-   * 
-   * @param value allowed object is {@link Object }
-   * 
-   */
-  public void setDatosXML(Object value) {
-    this.datosXML = value;
-  }
+    /**
+     * Sets the value of the datosXML property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Object }
+     *     
+     */
+    public void setDatosXML(Object value) {
+        this.datosXML = value;
+    }
 
-  /**
-   * Gets the value of the valorBinario property.
-   * 
-   * @return possible object is byte[]
-   */
-  public byte[] getValorBinario() {
-    return valorBinario;
-  }
+    /**
+     * Gets the value of the valorBinario property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getValorBinario() {
+        return valorBinario;
+    }
 
-  /**
-   * Sets the value of the valorBinario property.
-   * 
-   * @param value allowed object is byte[]
-   */
-  public void setValorBinario(byte[] value) {
-    this.valorBinario = ((byte[]) value);
-  }
+    /**
+     * Sets the value of the valorBinario property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setValorBinario(byte[] value) {
+        this.valorBinario = ((byte[]) value);
+    }
 
-  /**
-   * Gets the value of the referenciaFichero property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getReferenciaFichero() {
-    return referenciaFichero;
-  }
+    /**
+     * Gets the value of the referenciaFichero property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getReferenciaFichero() {
+        return referenciaFichero;
+    }
 
-  /**
-   * Sets the value of the referenciaFichero property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setReferenciaFichero(String value) {
-    this.referenciaFichero = value;
-  }
+    /**
+     * Sets the value of the referenciaFichero property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setReferenciaFichero(String value) {
+        this.referenciaFichero = value;
+    }
 
-  /**
-   * Gets the value of the nombreFormato property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getNombreFormato() {
-    return nombreFormato;
-  }
+    /**
+     * Gets the value of the nombreFormato property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getNombreFormato() {
+        return nombreFormato;
+    }
 
-  /**
-   * Sets the value of the nombreFormato property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setNombreFormato(String value) {
-    this.nombreFormato = value;
-  }
+    /**
+     * Sets the value of the nombreFormato property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNombreFormato(String value) {
+        this.nombreFormato = value;
+    }
 
-  /**
-   * Gets the value of the id property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getId() {
-    return id;
-  }
+    /**
+     * Gets the value of the id property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getId() {
+        return id;
+    }
 
-  /**
-   * Sets the value of the id property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setId(String value) {
-    this.id = value;
-  }
+    /**
+     * Sets the value of the id property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setId(String value) {
+        this.id = value;
+    }
 
 }

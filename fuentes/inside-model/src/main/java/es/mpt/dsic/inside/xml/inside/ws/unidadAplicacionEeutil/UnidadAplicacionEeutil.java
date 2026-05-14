@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>
- * Java class for UnidadAplicacionEeutil complex type.
+ * <p>Java class for UnidadAplicacionEeutil complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="UnidadAplicacionEeutil">
@@ -31,74 +29,90 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "UnidadAplicacionEeutil", propOrder = {"codigoUnidad", "aplicacion", "password"})
+@XmlType(name = "UnidadAplicacionEeutil", propOrder = {
+    "codigoUnidad",
+    "aplicacion",
+    "password"
+})
 public class UnidadAplicacionEeutil {
 
-  @XmlElement(required = true)
-  protected String codigoUnidad;
-  @XmlElement(required = true)
-  protected String aplicacion;
-  @XmlElement(required = true)
-  protected String password;
+    @XmlElement(required = true)
+    protected String codigoUnidad;
+    @XmlElement(required = true)
+    protected String aplicacion;
+    @XmlElement(required = true)
+    protected String password;
 
-  /**
-   * Gets the value of the codigoUnidad property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getCodigoUnidad() {
-    return codigoUnidad;
-  }
+    /**
+     * Gets the value of the codigoUnidad property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCodigoUnidad() {
+        return codigoUnidad;
+    }
 
-  /**
-   * Sets the value of the codigoUnidad property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setCodigoUnidad(String value) {
-    this.codigoUnidad = value;
-  }
+    /**
+     * Sets the value of the codigoUnidad property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCodigoUnidad(String value) {
+        this.codigoUnidad = value;
+    }
 
-  /**
-   * Gets the value of the aplicacion property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getAplicacion() {
-    return aplicacion;
-  }
+    /**
+     * Gets the value of the aplicacion property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAplicacion() {
+        return aplicacion;
+    }
 
-  /**
-   * Sets the value of the aplicacion property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setAplicacion(String value) {
-    this.aplicacion = value;
-  }
+    /**
+     * Sets the value of the aplicacion property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAplicacion(String value) {
+        this.aplicacion = value;
+    }
 
-  /**
-   * Gets the value of the password property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getPassword() {
-    return password;
-  }
+    /**
+     * Gets the value of the password property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getPassword() {
+        return password;
+    }
 
-  /**
-   * Sets the value of the password property.
-   * 
-   * @param value allowed object is {@link String }
-   * 
-   */
-  public void setPassword(String value) {
-    this.password = value;
-  }
+    /**
+     * Sets the value of the password property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setPassword(String value) {
+        this.password = value;
+    }
 
 }
